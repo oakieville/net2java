@@ -1,0 +1,28 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.MessageBox</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Public Shared Function Show(ByVal text As String, ByVal caption As String, ByVal buttons As Integer, ByVal iconInt As Integer) As DialogResult</vb-signature>
+<java>JOptionPane.showMessageDialog(null, ${arg0})</java>
+<import>javax.swing.JOptionPane</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Show( ByVal text As String ) As DialogResult</vb-signature>
+<java>JOptionPane.showMessageDialog(null, ${arg0})</java>
+<import>javax.swing.JOptionPane</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Show(ByVal text As String, ByVal caption As String) As DialogResult</vb-signature>
+<java>JOptionPane.showMessageDialog(null, ${arg0})</java>
+<import>javax.swing.JOptionPane</import>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,12 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+	<class>
+		<net-classname> string </net-classname>
+                <alias>System.String</alias>
+	</class>
+	
+	
+</translation>

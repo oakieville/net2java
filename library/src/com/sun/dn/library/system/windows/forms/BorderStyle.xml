@@ -1,0 +1,29 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.Windows.Forms.BorderStyle</net-classname>
+<inherits>System.Object</inherits>
+</enumeration>
+<properties>
+<property>
+<name>Fixed3D</name>
+<net-type>Integer</net-type>
+<get>
+<java>new BevelBorder(BevelBorder.RAISED)</java>
+<import>javax.swing.border.*</import>
+</get>
+</property>
+<property>
+<name>FixedSingle</name>
+<net-type>Integer</net-type>
+<get>
+<java>new LineBorder(java.awt.Color.BLACK)</java>
+<import>javax.swing.border.*</import>
+</get>
+</property>
+</properties>
+</translation>
+

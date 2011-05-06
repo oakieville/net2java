@@ -1,0 +1,11 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.Bitmap</net-classname>
+<inherits>System.Drawing.Image</inherits>
+</class>
+</translation>
+

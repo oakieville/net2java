@@ -1,0 +1,29 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.Directory</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.IO.DirectorySupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function GetDirectories(ByVal path As String) As String()</vb-signature>
+<java>DirectorySupport.getDirectories(${arg0})</java>
+<import>com.sun.dn.library.System.IO.DirectorySupport</import>
+</method>
+<method>
+<vb-signature>Public Shared Function GetLogicalDrives() As String()</vb-signature>
+<java>DirectorySupport.getLogicalDrives()</java>
+<import>com.sun.dn.library.System.IO.DirectorySupport</import>
+</method>
+<method>
+<vb-signature>Public Shared Function GetFiles( ByVal path As String  ) As String()</vb-signature>
+<java>DirectorySupport.getFiles(${arg0})</java>
+<import>com.sun.dn.library.System.IO.DirectorySupport</import>
+</method>
+</methods>
+</translation>
+

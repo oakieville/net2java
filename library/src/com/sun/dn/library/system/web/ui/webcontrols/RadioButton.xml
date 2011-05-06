@@ -1,0 +1,35 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.RadioButton</net-classname>
+<inherits>System.Web.UI.WebControls.CheckBox</inherits>
+<java>javax.faces.component.html.HtmlSelectOneRadio</java>
+</class>
+<events>
+<event>
+<name>CheckedChanged</name>
+<net-classname>System.Web.UI.WebControls.CheckedChanged</net-classname>
+<add-listener>addValueChangeListener</add-listener>
+<listener-method>processValueChange</listener-method>
+<java-listener-ifc>javax.faces.event.ValueChangeListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Checked</name>
+<net-type>Boolean</net-type>
+<set>
+<java>RadioButtonSupport.setChecked(${this}, ${value})</java>
+<import>com.sun.vb.library.System.Web.UI.WebControls.RadioButtonSupport</import>
+</set>
+<get>
+<java>RadioButtonSupport.getChecked(${this})</java>
+<import>com.sun.vb.library.System.Web.UI.WebControls.RadioButtonSupport</import>
+</get>
+</property>
+</properties>
+</translation>
+

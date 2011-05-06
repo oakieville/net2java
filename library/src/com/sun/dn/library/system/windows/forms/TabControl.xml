@@ -1,0 +1,58 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.TabControl</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.TabControlSupport</java>
+</class>
+<events>
+<event>
+<name>SelectedIndexChanged</name>
+<net-classname>System.Windows.Forms.TabControl.SelectedIndexChanged</net-classname>
+<add-listener>addChangeListener</add-listener>
+<listener-method>stateChanged</listener-method>
+<java-listener-ifc>javax.swing.event.ChangeListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>SelectedTab</name>
+<net-type>TabPage</net-type>
+<get>
+<java>(TabPageSupport) ${this}.getSelectedComponent()</java>
+</get>
+<set>
+<java>${this}.setSelectedComponent((TabPageSupport) ${value})</java>
+</set>
+</property>
+<property>
+<name>SelectedIndex</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.getSelectedIndex()</java>
+</get>
+<set>
+<java>${this}.setSelectedIndex(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Sub ResumeLayout(ByVal performLayout As Boolean)</vb-signature>
+<java>${this}.resumeLayout(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new TabControlSupport ()</java>
+<import>com.sun.dn.library.System.Windows.Forms.TabControlSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub SuspendLayout()</vb-signature>
+<java>${this}.suspendLayout()</java>
+</method>
+</methods>
+</translation>
+

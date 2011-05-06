@@ -1,0 +1,24 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.Font</net-classname>
+<inherits>System.MarshalByRefObject</inherits>
+<java>java.awt.Font</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal familyName As String, ByVal emSize As Single)</vb-signature>
+<java>new Font(${arg0}, Font.PLAIN, (int) ${arg1})</java>
+<import>java.awt.Font</import>
+</method>
+<method>
+<vb-signature>Public Sub New(ByVal familyName As String, ByVal emSize As Single, ByVal style As Integer)</vb-signature>
+<java>new Font(${arg0}, ${arg2}, (int) ${arg1})</java>
+<import>java.awt.Font</import>
+</method>
+</methods>
+</translation>
+

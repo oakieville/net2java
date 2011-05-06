@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Xml.XmlNodeType</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>Text</name>
+<net-type>XmlNodeType</net-type>
+<get>
+<java>1</java>
+</get>
+</property>
+<property>
+<name>Element</name>
+<net-type>XmlNodeType</net-type>
+<get>
+<java>0</java>
+</get>
+</property>
+</properties>
+</translation>
+

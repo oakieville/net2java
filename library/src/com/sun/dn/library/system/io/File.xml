@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.File</net-classname>
+<inherits>System.Object</inherits>
+<java>java.io.File</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function Exists(ByVal path As String) As Boolean</vb-signature>
+<java>(new File(${arg0}).exists())</java>
+<import>java.io.File</import>
+</method>
+</methods>
+</translation>

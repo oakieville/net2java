@@ -1,0 +1,12 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Cursor</net-classname>
+<inherits>System.Object</inherits>
+<java>java.awt.Cursor</java>
+</class>
+</translation>
+

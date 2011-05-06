@@ -1,0 +1,83 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Label</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.LabelSupport</java>
+</class>
+<properties>
+<property>
+<name>TextAlign</name>
+<net-type>Integer</net-type>
+<set>
+<java>AppearanceSupport.setTextAlignForLabel(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.AppearanceSupport</import>
+</set>
+</property>
+<property>
+<name>ForeColor</name>
+<net-type>Color</net-type>
+<set>
+<java>${this}.setForeground(${value})</java>
+</set>
+<get>
+<java>${this}.getForeground()</java>
+</get>
+</property>
+<property>
+<name>Enabled</name>
+<net-type>Boolean</net-type>
+<set>
+<java>${this}.setEnabled(${value})</java>
+</set>
+<get>
+<java>${this}.isEnabled()</java>
+</get>
+</property>
+<property>
+<name>AutoSize</name>
+<net-type>Boolean</net-type>
+<set>
+<java>// Label set Auto size property on ${this} to $(value)</java>
+</set>
+</property>
+<property>
+<name>BorderStyle</name>
+<net-type>Integer</net-type>
+<set>
+<java>// ${this}.setBorder(${value})</java>
+</set>
+</property>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+<get>
+<java>${this}.getText()</java>
+</get>
+</property>
+<property>
+<name>BackColor</name>
+<net-type>Color</net-type>
+<set>
+<java>${this}.setBackground(${value})</java>
+</set>
+<get>
+<java>${this}.getBackground()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new LabelSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.LabelSupport</import>
+</method>
+</methods>
+</translation>
+

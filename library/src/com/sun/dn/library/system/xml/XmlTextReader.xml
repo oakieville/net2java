@@ -1,0 +1,46 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Xml.XmlTextReader</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Xml.XmlTextReaderSupport</java>
+</class>
+<properties>
+<property>
+<name>Name</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getName()</java>
+</get>
+</property>
+<property>
+<name>EOF</name>
+<net-type>Boolean</net-type>
+<get>
+<java>${this}.isEOF()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Overridable Function ReadElementString() As String</vb-signature>
+<java>${this}.readElementString()</java>
+</method>
+<method>
+<vb-signature>Overrides Public Function Read() As Boolean</vb-signature>
+<java>${this}.read()</java>
+</method>
+<method>
+<vb-signature>Public Overridable Function MoveToContent() As XmlNodeType</vb-signature>
+<java>${this}.moveToContent()</java>
+</method>
+<method>
+<vb-signature>Public Sub New( ByVal url As String  )</vb-signature>
+<java>new XmlTextReaderSupport(${arg0})</java>
+<import>com.sun.dn.library.System.Xml.XmlTextReaderSupport</import>
+</method>
+</methods>
+</translation>

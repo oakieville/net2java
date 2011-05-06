@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Type</net-classname>
+<inherits>System.Reflection.MemberInfo</inherits>
+<java>java.lang.Class</java>
+</class>
+<properties>
+<property>
+<name>Name</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getName()</java>
+</get>
+</property>
+</properties>
+</translation>
+

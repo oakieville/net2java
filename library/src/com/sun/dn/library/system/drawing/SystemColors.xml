@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.SystemColors</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>Window</name>
+<net-type>System.Drawing.Color</net-type>
+<get>
+<java>new java.awt.Color(SystemColor.WINDOW)</java>
+<import>java.awt.SystemColor</import>
+</get>
+</property>
+</properties>
+</translation>
+

@@ -1,0 +1,55 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.ListBox</net-classname>
+<inherits>System.Windows.Forms.ListControl</inherits>
+<java>javax.swing.JList</java>
+</class>
+<events>
+<event>
+<name>SelectedIndexChanged</name>
+<net-classname>System.Windows.Forms.SelectedIndexChanged</net-classname>
+<add-listener>addListSelectionListener</add-listener>
+<listener-method>valueChanged</listener-method>
+<java-listener-ifc>javax.swing.event.ListSelectionListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Items</name>
+<net-type>System.Windows.Forms.ListBox.ObjectCollection</net-type>
+<get>
+<java>ListBoxSupport.getItems(${this})</java>
+<import>com.sun.dn.library.System.Windows.Forms.ListBoxSupport</import>
+</get>
+</property>
+<property>
+<name>SelectedItem</name>
+<net-type>System.Object</net-type>
+<set>
+<java>${this}.setSelectedValue(${value}, true)</java>
+</set>
+<get>
+<java>${this}.getSelectedValue()</java>
+</get>
+</property>
+<property>
+<name>FormattingEnabled</name>
+<net-type>Boolean</net-type>
+<set>
+<java>// ${this}.setFormattingEnabled(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new ListBoxSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.ListBoxSupport</import>
+</method>
+</methods>
+</translation>
+

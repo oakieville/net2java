@@ -1,0 +1,11 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.MouseEventArgs</net-classname>
+<inherits>System.EventArgs</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.MouseEventArgsSupport</java>
+</class>
+</translation>

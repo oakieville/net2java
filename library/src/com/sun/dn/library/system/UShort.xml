@@ -1,0 +1,11 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.UShort</net-classname>
+<inherits>System.Object</inherits>
+<java>short</java>
+</class>
+</translation>

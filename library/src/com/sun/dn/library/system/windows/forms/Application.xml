@@ -1,0 +1,33 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Application</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Sub Exit()</vb-signature>
+<java>System.exit(0)</java>
+</method>
+<method>
+<vb-signature>Public Shared Sub EnableVisualStyles()</vb-signature>
+<java>// System.Windows.Form.Application.EnableVisualStyles() is handled by the translator</java>
+</method>
+<method>
+<vb-signature>Public Shared Sub SetCompatibleTextRenderingDefault(ByVal defaultValue As Boolean)</vb-signature>
+<java>// System.Windows.Form.Application.SetCompatibleTextRenderingDefault() is handled by the translator</java>
+</method>
+<method>
+<vb-signature>Public Shared Sub Run(ByVal mainForm As Form)</vb-signature>
+<java>//System.Windows.Form.Application.Run() method needs to be trabslated properly</java>
+</method>
+<method>
+<vb-signature>Public Shared Sub Run()</vb-signature>
+<java>// System.Windows.Form.Application.Run() is handled by the translator</java>
+</method>
+</methods>
+</translation>
+

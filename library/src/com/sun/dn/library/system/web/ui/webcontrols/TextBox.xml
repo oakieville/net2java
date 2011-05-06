@@ -1,0 +1,20 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.TextBox</net-classname>
+<inherits>System.Web.UI.WebControls.WebControl</inherits>
+<java>javax.faces.component.html.HtmlInputText</java>
+</class>
+<properties>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setValue(${value})</java>
+</set>
+</property>
+</properties>
+</translation>

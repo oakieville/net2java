@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Double</net-classname>
+<inherits>System.Object</inherits>
+<java>double</java>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Public Shared Function Parse(ByVal s As String) As Double</vb-signature>
+<java>Double.parseDouble(${arg0})</java>
+</method>
+</methods>
+</translation>
+

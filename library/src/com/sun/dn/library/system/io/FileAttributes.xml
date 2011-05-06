@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.FileAttributes</net-classname>
+<inherits>System.Object</inherits>
+<java>System.IO.FileAttributesSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Overridable Function ToString() As String</vb-signature>
+<java>"" + ${this}</java>
+</method>
+</methods>
+</translation>
+

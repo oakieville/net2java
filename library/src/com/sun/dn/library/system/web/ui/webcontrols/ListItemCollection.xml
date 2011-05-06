@@ -1,0 +1,33 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.ListItemCollection</net-classname>
+<inherits>System.Object</inherits>
+<java>java.util.List</java>
+</class>
+<properties>
+<property>
+<name>Count</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.size()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub RemoveAt(ByVal i As Integer)</vb-signature>
+<java>ListBoxSupport.removeListItemAt(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.Web.UI.WebControls.ListBoxSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub Add(ByVal o As Object)</vb-signature>
+<java>ListBoxSupport.addListItem(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.Web.UI.WebControls.ListBoxSupport</import>
+</method>
+</methods>
+</translation>
+

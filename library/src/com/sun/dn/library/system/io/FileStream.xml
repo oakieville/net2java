@@ -1,0 +1,19 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.FileStream</net-classname>
+<inherits>System.IO.Stream</inherits>
+<java>com.sun.dn.library.System.IO.FileStreamSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal path As String, ByVal mode As FileMode)</vb-signature>
+<java>new FileStreamSupport(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.IO.FileStreamSupport</import>
+</method>
+</methods>
+</translation>
+

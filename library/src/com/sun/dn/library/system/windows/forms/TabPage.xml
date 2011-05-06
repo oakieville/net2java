@@ -1,0 +1,36 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.TabPage</net-classname>
+<inherits>System.Windows.Forms.Panel</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.TabPageSupport</java>
+</class>
+<properties>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new TabPageSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.TabPageSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Sub ResumeLayout(ByVal performLayout As Boolean)</vb-signature>
+<java>${this}.resumeLayout(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Sub SuspendLayout()</vb-signature>
+<java>${this}.suspendLayout()</java>
+</method>
+</methods>
+</translation>
+

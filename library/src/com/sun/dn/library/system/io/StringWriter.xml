@@ -1,0 +1,24 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.StringWriter</net-classname>
+<inherits>System.IO.TextWriter</inherits>
+<java>com.sun.dn.library.System.IO.StringWriterSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new StringWriterSupport()</java>
+<import>com.sun.dn.library.System.IO.StringWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overrides Overloads Public Sub Write(ByVal value As String)</vb-signature>
+<java>${this}.write(${arg0})</java>
+<import>com.sun.dn.library.System.IO.StringWriterSupport</import>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.ListControl</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>java.lang.Object</java>
+</class>
+<events>
+<event>
+<name>SelectedValueChanged</name>
+<net-classname>System.Windows.Forms.SelectedValueChanged</net-classname>
+<add-listener>addListSelectionListener</add-listener>
+<listener-method>valueChanged</listener-method>
+<java-listener-ifc>javax.swing.event.ListSelectionListener</java-listener-ifc>
+</event>
+</events>
+</translation>
+

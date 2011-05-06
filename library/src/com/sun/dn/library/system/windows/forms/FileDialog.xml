@@ -1,0 +1,64 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.FileDialog</net-classname>
+<inherits>System.Windows.Forms.CommonDialog</inherits>
+<java>java.lang.Object</java>
+</class>
+<properties>
+<property>
+<name>FilterIndex</name>
+<net-type>Integer</net-type>
+<get>
+<java>FileDialogSupport.getFilterIndex(${this})</java>
+</get>
+<set>
+<java>FileDialogSupport.setFilterIndex(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.FileDialogSupport</import>
+</set>
+</property>
+<property>
+<name>RestoreDirectory</name>
+<net-type>Boolean</net-type>
+<get>
+<java>FileDialogSupport.getRestoreDirectory(${this})</java>
+<import>com.sun.dn.library.System.Windows.Forms.FileDialogSupport</import>
+</get>
+<set>
+<java>// Java does not support the RestoreDefault property</java>
+<import>com.sun.dn.library.System.Windows.Forms.FileDialogSupport</import>
+</set>
+</property>
+<property>
+<name>DefaultExt</name>
+<net-type>String</net-type>
+<set>
+<java>// Setting the default extension is not a supported option</java>
+<import>com.sun.dn.library.System.Windows.Forms.FileDialogSupport</import>
+</set>
+</property>
+<property>
+<name>Filter</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setFileFilter(new FileFilterImpl(${value}))</java>
+<import>com.sun.dn.library.System.Windows.Forms.FileFilterImpl</import>
+</set>
+</property>
+<property>
+<name>FileName</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getSelectedFile() != null ? ${this}.getSelectedFile().toString() : null</java>
+</get>
+<set>
+<java>${this}.setSelectedFile(new File(${value}))</java>
+<import>java.io.File</import>
+</set>
+</property>
+</properties>
+</translation>
+

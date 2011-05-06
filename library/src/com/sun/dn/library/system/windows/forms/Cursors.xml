@@ -1,0 +1,22 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Cursors</net-classname>
+<inherits>System.Object</inherits>
+<java>java.awt.Cursor</java>
+</class>
+<properties>
+<property>
+<name>IBeam</name>
+<net-type>Cursor</net-type>
+<get>
+<java>Cursor.TEXT_CURSOR</java>
+<import>java.awt.Cursor</import>
+</get>
+</property>
+</properties>
+</translation>
+

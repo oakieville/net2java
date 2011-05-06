@@ -1,0 +1,28 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Array</net-classname>
+<inherits>System.Object</inherits>
+<java>java.util.ArrayList</java>
+</class>
+<properties>
+<property>
+<name>Length</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.length</java>
+</get>
+</property>
+<property>
+<name>IsFixedSize</name>
+<net-type>Boolean</net-type>
+<get>
+<java>true</java>
+</get>
+</property>
+</properties>
+</translation>
+

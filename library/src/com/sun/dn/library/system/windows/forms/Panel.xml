@@ -1,0 +1,36 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Panel</net-classname>
+<inherits>System.Windows.Forms.ScrollableControl</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.PanelSupport</java>
+</class>
+<properties>
+<property>
+<name>Parent</name>
+<net-type>System.Windows.Forms.Control</net-type>
+<set>
+<java>${this}.setParent(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub SuspendLayout()</vb-signature>
+<java>// Panel suspend Layout</java>
+</method>
+<method>
+<vb-signature>Overloads Public Sub ResumeLayout(ByVal performLayout As Boolean)</vb-signature>
+<java>// Panel Resume Layout</java>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new PanelSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.PanelSupport</import>
+</method>
+</methods>
+</translation>
+

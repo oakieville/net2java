@@ -1,0 +1,30 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<structure>
+<net-classname>System.Drawing.SizeF</net-classname>
+<java>java.lang.Object</java>
+</structure>
+<properties>
+<property>
+<name>UseVisualStyleBackColor</name>
+<net-type>Boolean</net-type>
+<get>
+<java>${this}.setNewProperty1(${value})</java>
+</get>
+<set>
+<java>${this}.setNewProperty1(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal width As Single, ByVal height As Single)</vb-signature>
+<java>new Dimension((int) ${arg0}, (int) ${arg1})</java>
+<import>java.awt.Dimension</import>
+</method>
+</methods>
+</translation>
+

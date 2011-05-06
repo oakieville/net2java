@@ -1,0 +1,47 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Xml.XmlNode</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Xml.XmlNodeSupport</java>
+</class>
+<properties>
+<property>
+<name>ChildNodes</name>
+<net-type>System.Xml.XmlNodeList</net-type>
+<get>
+<java>${this}.getChildNodes()</java>
+</get>
+</property>
+<property>
+<name>Count</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.getCount()</java>
+</get>
+</property>
+<property>
+<name>InnerText</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getInnerText()</java>
+</get>
+<set>
+<java>${this}.setInnerText(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Function SelectSingleNode( ByVal xpath As String ) As XmlNode</vb-signature>
+<java>${this}.selectSingleNode(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Overridable Function AppendChild(ByVal newChild As System.Xml.XmlNode) As System.Xml.XmlNode</vb-signature>
+<java>${this}.appendChild(${arg0})</java>
+</method>
+</methods>
+</translation>

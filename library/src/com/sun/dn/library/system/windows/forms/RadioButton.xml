@@ -1,0 +1,63 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.RadioButton</net-classname>
+<inherits>System.Windows.Forms.ButtonBase</inherits>
+<java>javax.swing.JRadioButton</java>
+</class>
+<events>
+<event>
+<name>CheckedChanged</name>
+<net-classname>System.Windows.Forms.CheckedChanged</net-classname>
+<add-listener>addChangeListener</add-listener>
+<listener-method>stateChanged</listener-method>
+<java-listener-ifc>javax.swing.event.ChangeListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>TextAlign</name>
+<net-type>Integer</net-type>
+<set>
+<java>AppearanceSupport.setTextAlign(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.AppearanceSupport</import>
+</set>
+</property>
+<property>
+<name>Appearance</name>
+<net-type>Integer</net-type>
+<set>
+<java>AppearanceSupport.setAppearance(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.AppearanceSupport</import>
+</set>
+</property>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+</property>
+<property>
+<name>Checked</name>
+<net-type>Boolean</net-type>
+<set>
+<java>${this}.setSelected(${value})</java>
+</set>
+<get>
+<java>${this}.isSelected()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new JRadioButton()</java>
+<import>javax.swing.JRadioButton</import>
+</method>
+</methods>
+</translation>
+

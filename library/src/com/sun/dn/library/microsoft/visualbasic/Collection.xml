@@ -1,0 +1,49 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>Microsoft.VisualBasic.Collection</net-classname>
+<inherits>System.Object</inherits>
+<runtime>true</runtime>
+<java>java.util.LinkedHashMap</java>
+</class>
+<properties>
+<property>
+<name>Count</name>
+<net-type>System.Types.Integer</net-type>
+<get>
+<java>${this}.values().size()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub Remove(ByVal Index As Integer)</vb-signature>
+<java>CollectionSupport.remove(${this}, ${arg0})</java>
+<import>com.sun.dn.library.Microsoft.VisualBasic.CollectionSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new LinkedHashMap()</java>
+<import>java.util.LinkedHashMap</import>
+</method>
+<method>
+<vb-signature>Public Sub Add(ByVal Item As Object)</vb-signature>
+<java>${this}.put(${arg0}, ${arg0})</java>
+<import>java.util.LinkedHashMap</import>
+</method>
+<method>
+<vb-signature>Public Function Item(ByVal index As Integer) As Object</vb-signature>
+<java>CollectionSupport.getItem(${this}, ${arg0})</java>
+<import>com.sun.dn.library.Microsoft.VisualBasic.CollectionSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub Add(ByVal Item As Object, ByVal Key As String)</vb-signature>
+<java>${this}.put(${arg1}, ${arg0})</java>
+<import>java.util.LinkedHashMap</import>
+</method>
+</methods>
+</translation>
+

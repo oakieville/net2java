@@ -1,0 +1,20 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.TextWriter</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Public Overridable Sub WriteLine(ByVal value As Integer)</vb-signature>
+<java>${this}.writeLineInt(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Overridable Sub WriteLine(ByVal value As String)</vb-signature>
+<java>${this}.writeLine(${arg0})</java>
+</method>
+</methods>
+</translation>

@@ -1,0 +1,19 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.MainMenu</net-classname>
+<inherits>System.Windows.Forms.Menu</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.MainMenuSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new MainMenuSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.MainMenuSupport</import>
+</method>
+</methods>
+</translation>
+

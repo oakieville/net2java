@@ -1,0 +1,12 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Attribute</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.AttributeSupport</java>
+</class>
+</translation>
+

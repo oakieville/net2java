@@ -1,0 +1,41 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.TreeNode</net-classname>
+<inherits>System.MarshalByRefObject</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.TreeNodeSupport</java>
+</class>
+<properties>
+<property>
+<name>Nodes</name>
+<net-type>System.Windows.Forms.TreeNodeCollection</net-type>
+<get>
+<java>${this}.getNodes()</java>
+</get>
+</property>
+<property>
+<name>FullPath</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setFullPath( ${value} )</java>
+</set>
+<get>
+<java>${this}.getFullPath()</java>
+</get>
+</property>
+<property>
+<name>Tag</name>
+<net-type>System.Object</net-type>
+<set>
+<java>${this}.setTag( ${value} )</java>
+</set>
+<get>
+<java>${this}.getTag()</java>
+</get>
+</property>
+</properties>
+</translation>
+

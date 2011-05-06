@@ -1,0 +1,88 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.TreeView</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.TreeViewSupport</java>
+</class>
+<events>
+<event>
+<name>AfterSelect</name>
+<net-classname>System.Windows.Forms.AfterSelect</net-classname>
+<add-listener>addTreeSelectionListener</add-listener>
+<listener-method>valueChanged</listener-method>
+<java-listener-ifc>javax.swing.event.TreeSelectionListener</java-listener-ifc>
+</event>
+<event>
+<name>BeforeExpand</name>
+<net-classname>System.Windows.Forms.BeforeExpand</net-classname>
+<add-listener>addTreeWillExpandListener</add-listener>
+<listener-method>treeWillExpand</listener-method>
+<java-listener-ifc>javax.swing.event.TreeWillExpandListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Nodes</name>
+<net-type>System.Windows.Forms.TreeNodeCollection</net-type>
+<get>
+<java>${this}.getNodes()</java>
+</get>
+</property>
+<property>
+<name>ItemHeight</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setItemHeight( ${value} )</java>
+</set>
+<get>
+<java>${this}.getItemHeight()</java>
+</get>
+</property>
+<property>
+<name>ImageIndex</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setImageIndex( ${value} )</java>
+</set>
+<get>
+<java>${this}.getImageIndex()</java>
+</get>
+</property>
+<property>
+<name>Indent</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setIndent( ${value} )</java>
+</set>
+<get>
+<java>${this}.getIndent()</java>
+</get>
+</property>
+<property>
+<name>SelectedImageIndex</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setSelectedImageIndex( ${value} )</java>
+</set>
+<get>
+<java>${this}.getSelectedImageIndex()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Function NewMethod1() As String</vb-signature>
+<java>${this}.newMethod1(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new TreeViewSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.TreeViewSupport</import>
+</method>
+</methods>
+</translation>
+

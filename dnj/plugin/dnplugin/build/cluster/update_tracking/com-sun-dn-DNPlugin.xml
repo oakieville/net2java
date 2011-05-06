@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module codename="com.sun.dn.DNPlugin">
+    <module_version install_time="1304663631171" last="true" origin="installer" specification_version="1.0">
+        <file crc="2265746091" name="config/Modules/com-sun-dn-DNPlugin.xml"/>
+        <file crc="3491243064" name="modules/com-sun-dn-DNPlugin.jar"/>
+        <file crc="2382244567" name="modules/ext/jsf-api.jar"/>
+        <file crc="4246015074" name="modules/ext/jsp-api.jar"/>
+        <file crc="3022084125" name="modules/ext/junit.jar"/>
+        <file crc="2664773301" name="modules/ext/servlet-api.jar"/>
+        <file crc="3367088967" name="modules/ext/xercesImpl.jar"/>
+    </module_version>
+</module>

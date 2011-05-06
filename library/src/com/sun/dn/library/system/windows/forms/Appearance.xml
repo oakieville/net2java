@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.Windows.Forms.Appearance</net-classname>
+<inherits>System.Object</inherits>
+</enumeration>
+<properties>
+<property>
+<name>Button</name>
+<net-type>Integer</net-type>
+<get>
+<java>AppearanceSupport.BUTTON</java>
+</get>
+</property>
+<property>
+<name>Normal</name>
+<net-type>Integer</net-type>
+<get>
+<java>AppearanceSupport.NORMAL</java>
+</get>
+</property>
+</properties>
+</translation>
+

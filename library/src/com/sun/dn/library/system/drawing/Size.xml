@@ -1,0 +1,40 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.Size</net-classname>
+<java>java.awt.Dimension</java>
+</class>
+<properties>
+<property>
+<name>Width</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setWidth(${value))</java>
+</set>
+<get>
+<java>${this}.getWidth()</java>
+</get>
+</property>
+<property>
+<name>Height</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setHeight(${value))</java>
+</set>
+<get>
+<java>${this}.getHeight()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal width As Integer, ByVal height As Integer)</vb-signature>
+<java>new Dimension(${arg0}, ${arg1})</java>
+<import>java.awt.Dimension</import>
+</method>
+</methods>
+</translation>
+

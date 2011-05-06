@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<!--
+    This DTD defines the vocabulary for a NET2Java translation entry in
+    the NET2Java library.
+    
+    @author Danny.Coward@sun.com
+
+-->
+
+<!--- Top level element for all the translations. -->
+<!ELEMENT translation (class|enumeration|event-defn|methods|properties|events)*>
+
+<!--- The class element describes the .NET class this translation file translates. -->
+<!ELEMENT class (java|inherits|net-classname)*>
+
+<!--- The enumeration element describes the .NET enumeration this transation file translates. -->
+<!ELEMENT enumeration (java|inherits|net-classname)*>
+
+<!--- The event-defn file describes the .NET event this translation file describes. -->
+<!ELEMENT event-defn (net-type|net-classname)*>
+
+<!--- Fully qualified .NET classname. -->
+<!ELEMENT net-classname (#PCDATA)>
+
+<!--- Fully qualified .NET classname. -->
+<!ELEMENT inherits (#PCDATA)>
+
+<!--- The Java translation code. -->
+<!ELEMENT java (#PCDATA)>
+
+<!--- The events this file translates. -->
+<!ELEMENT events (event)*>
+
+<!--- The translation of a .NET event. -->
+<!ELEMENT event (java-listener-ifc|listener-method|add-listener|net-classname|name)*>
+
+<!--- Short name of the event. -->
+<!ELEMENT name (#PCDATA)>
+
+<!--- The Java addListener method. -->
+<!ELEMENT add-listener (#PCDATA)>
+
+<!--- The Java method to call when firing the event. -->
+<!ELEMENT listener-method (#PCDATA)>
+
+<!--- The fully qualified name of the Java interface. -->
+<!ELEMENT java-listener-ifc (#PCDATA)>
+
+
+
+<!--- Element containsing all the properties this file translates. -->
+<!ELEMENT properties (property)*>
+
+<!--- A .NET property translation definition. -->
+<!ELEMENT property (set|get|net-type|name)*>
+
+<!--- FQ .NET type for this property. -->
+<!ELEMENT net-type (#PCDATA)>
+
+<!--- Element containing the translation for the getter. -->
+<!ELEMENT get (java)*>
+
+<!--- Element containing the translation for the setter. -->
+<!ELEMENT set (java)*>
+
+<!--- Element holding the method translations. -->
+<!ELEMENT methods (method)*>
+
+<!--- A method translation. -->
+<!ELEMENT method (import|java|vb-signature)*>
+
+<!--- Visual Basic signtaure of the .NET method. -->
+<!ELEMENT vb-signature (#PCDATA)>
+
+<!--- A Java import statement. e.g. java.lang.System -->
+<!ELEMENT import (#PCDATA)>
+

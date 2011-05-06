@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="d">
+  <meta name="GENERATOR"
+ content="Mozilla/4.79 [en] (Windows NT 5.0; U) [Netscape]">
+  <title>.NET2Java for Dummies</title>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(204, 204, 255);"
+ alink="#000099" link="#000099" vlink="#990099">
+<div style="text-align: center;"><big><big><span
+ style="font-weight: bold;"><a href="index.html"><img alt=""
+ src="dnj_wm3.jpg"
+ style="border: 0px solid ; width: 95px; height: 45px;"></a><br>
+</span></big></big><a href="../index.html"><big
+ style="font-weight: bold;"><big><br>
+</big></big></a></div>
+<div style="text-align: center;"><big><span style="font-weight: bold;">What
+is NET2Java ?</span></big><big><span style="font-weight: bold;"></span></big></div>
+<br>
+NET2Java a new technology that helps you take an application written in
+Visual Basic or C# to the .NET platform, and translate it into a
+program written in Java source code. Right now its available through a
+NetBeans plugin that's included in the distribution files.<br>
+<big><span style="font-weight: bold;"></span></big><br>
+<br>
+<div style="text-align: center;"><big><span style="font-weight: bold;">Here's
+the backgound</span></big><br>
+</div>
+<br>
+When you take a look at a .NET program, its made up, naturally enough,
+of sequences of statements. Like humans in an organized society, each
+statement is unique and has individual meaning. They group
+themselves together to form meaningful coalitions, giving the society
+function and structure. These structural elements of a .NET program are
+elements like classes, structures, modules, methods and control flow
+statements. They are inherent to the particular .NET language, whether
+it be C# or VisualBasic. The syntactical underpinnings of the
+structures
+are provided by the keywords of the language. Much of the content of
+these structures, the statements within them, are made up of calls to
+other structures, predominantly for most programs, calls into the .NET
+Platform APIs.<br>
+<div style="text-align: center;"><a href="../index.html"><big
+ style="font-weight: bold;"><big><br>
+</big></big></a></div>
+<div style="text-align: center;"><big><span style="font-weight: bold;">Why
+are you telling me all this ?</span></big><br>
+</div>
+<br>
+Because its important for you to know is that NET2Java is made up
+of two main pieces<big><span style="font-weight: bold;"><img alt=""
+ src="OnePagerPics.jpg"
+ style="border: 2px solid ; width: 634px; height: 401px;" align="right"
+ hspace="10" vspace="10"></span></big>
+<ul>
+  <li>the .NET interpreter and parsers (one parser for C# and one for
+Visual
+Basic)</li>
+</ul>
+These parsers read .NET source code, and can understand the syntax and
+structure of the program and know how to produce the equivalent Java
+structures in Java source code as output.<br>
+<ul>
+  <li>the .NET translation library</li>
+</ul>
+The library contains translation files. One for each .NET API class.
+Inside the translation file, there is a place to put a Java translation
+for every property, method and event on the .NET API class. The really
+important thing to know is that this library is INCOMPLETE !
+Translating all the .NET platform is a big job, bigger than I've had
+time for yet. Its a work in progress. Plus as I'm sure you know, many
+.NET programs use custom components that are not part of the .NET
+platform, so I couldn't have put in the translations for those yet.<br>
+<br>
+Anyway, you can add to the library very easily yourself using the
+NET2Java Library Editor tool or hand editing the XML - but read on.<br>
+<div style="text-align: center;"><a href="../index.html"><big
+ style="font-weight: bold;"><big><br>
+</big></big></a></div>
+<div style="text-align: center;"><big><span style="font-weight: bold;">Well
+Begun is Half Done and Half a Loaf is Better than no Bread</span><br>
+</big></div>
+<br>
+So when the translation translates a program and finds it uses a .NET
+API for which it has no translation, instead of being dumb and grinding
+to a halt, it keeps going merrily on, but flags the unknown API calls
+it couldn't deal with in your Java source code. In this way, you can
+get the benefit of translating the parts of the .NET program the
+translation knows how to deal with (like, all the language and
+structural elements, and all the API calls that are in the library),
+and you can decide what you want to do with the unknown APIs. The flags
+are called 'ToDo''s and are easy to find in your source code. For
+example, if you use the NET2Java NetBeans plugin, you can even pull up
+a window that
+will show you a list of all of them. So, the more incomplete the
+library, the more incomplete (but still useful !) your translations.<br>
+<div style="text-align: center;"><a href="../index.html"><big
+ style="font-weight: bold;"><big><br>
+</big></big></a></div>
+<div style="text-align: center;"><big><span style="font-weight: bold;">Dealing
+with Unknown .NET APIs - Editing the Library</span></big><br>
+</div>
+<p>You have a choice here as you browse through the ToDos in your
+translated application. You could look up the .NET API documentation
+and the Java documentation and figure out what the translation should
+be. Sometimes there will be an obvious Java equivalent, sometimes not.
+In the first case, you just enter the equivalent using the NET2Java
+Library
+Editor (either off the command line, or off the Tools menu in NetBeans
+if you use the NET2Java NetBeans plugin). In the second case, you can
+write some Java code that you need to compile and put into the library.
+The you just do the same as for the first case, your Java equivalent
+now referencing the code you just wrote. There's some examples of this
+second kind, especially in the
+com.sun.dn.library.System.Windows.Forms.* package in the library. Take
+a look !</p>
+<p style="text-align: center;"><br>
+<big><span style="font-weight: bold;">Think
+Big - Many Hands Make Light Work</span></big><br>
+</p>
+<p>OK, so if you've read to here, I don't need to tell you how big the
+.NET platform API is. Its MASSIVE !! But before you get too scared at
+the prospect of how old you will be by the time I've gotten round to
+putting in a library entry for all those .NET API classes, think of it
+this way: what if...as individually, incrementally, method by method we
+each figure out .NET API translations, instead of just putting them
+back into our own libraries in our own home directory, what if we
+pooled our resources and started putting them back into one central
+library ? So we could share our translations with each other ? Maybe
+the job of filling up the library would get done a lot quicker that
+way. <br>
+</p>
+<div style="text-align: center;">
+<big><span style="font-weight: bold;"><br>
+Just
+think....<br>
+</span></big><big><big><span style="font-weight: bold;"><a
+ href="index.html"><img alt="" src="dnj_wm3.jpg"
+ style="border: 0px solid ; width: 95px; height: 45px;"></a></span></big></big><br>
+<a href="../index.html"><big style="font-weight: bold;"><big><br>
+</big></big></a></div>
+<p><br>
+</p>
+</body>
+</html>

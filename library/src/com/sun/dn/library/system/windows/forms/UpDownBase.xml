@@ -1,0 +1,11 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.UpDownBase</net-classname>
+<inherits>System.Windows.Forms.ContainerControl</inherits>
+</class>
+</translation>
+

@@ -1,0 +1,23 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Decimal</net-classname>
+<inherits>System.Object</inherits>
+<java>double</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New( ByVal bits() As Integer  )</vb-signature>
+<java>DecimalSupport.createDoubleFromIntArray(${arg0})</java>
+<import>com.sun.dn.library.System.DecimalSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>0.0</java>
+</method>
+</methods>
+</translation>
+

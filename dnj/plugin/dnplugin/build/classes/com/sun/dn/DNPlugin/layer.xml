@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+     <folder name="Menu">
+        <folder name="File">
+            <attr name="Separator2.instance/Import" boolvalue="true" />
+            <folder name="Import">
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:org/openide/resources/actions/empty.gif" />
+                <file name="com-sun-dn-DNPlugin-ImportVBAction.instance">
+                </file>
+                <file name="com-sun-dn-DNPlugin-ImportCSAction.instance">
+                </file>
+            </folder>
+
+            <!-- TODO is this correct way? -->
+            <attr name="Import/ImporterSeparator1.instance" boolvalue="true" />
+            <file name="ImporterSeparator1.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator" />
+            </file>
+        </folder>
+        <folder name="Tools">
+            <attr name="Separator2.instance/.NET Library" boolvalue="true" />
+            <folder name=".NET Library">
+                <attr name="SystemFileSystem.icon" urlvalue="nbresloc:org/openide/resources/actions/empty.gif" />
+                <file name="com-sun-dn-DNPlugin-OpenNETLibraryAction.instance">
+                </file>
+            </folder>
+        </folder>
+     </folder>
+</filesystem>
+
+
+

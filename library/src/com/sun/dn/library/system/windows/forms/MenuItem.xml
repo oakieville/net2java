@@ -1,0 +1,57 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.MenuItem</net-classname>
+<inherits>System.Windows.Forms.Menu</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.MenuItemSupport</java>
+</class>
+<events>
+<event>
+<name>Click</name>
+<net-classname>System.Windows.Forms.Control.Click</net-classname>
+<add-listener>addActionListener</add-listener>
+<listener-method>actionPerformed</listener-method>
+<java-listener-ifc>java.awt.event.ActionListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Index</name>
+<net-type>Integer</net-type>
+<set>
+<java>// index of menu item in parent. yikes !</java>
+</set>
+<get>
+<java>// index of menu item in parent. yikes !</java>
+</get>
+</property>
+<property>
+<name>Shortcut</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setShortcut(${value})</java>
+</set>
+<get>
+<java>${this}.getShortcut()</java>
+</get>
+</property>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new MenuItemSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.MenuItemSupport</import>
+</method>
+</methods>
+</translation>
+

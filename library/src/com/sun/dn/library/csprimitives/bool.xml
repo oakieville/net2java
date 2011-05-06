@@ -1,0 +1,13 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+	<class>
+		<net-classname> bool </net-classname>
+		<alias>System.Boolean</alias>
+
+	</class>
+	
+	
+</translation>

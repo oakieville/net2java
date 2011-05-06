@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.FormStartPosition</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>CenterScreen</name>
+<net-type>Integer</net-type>
+<get>
+<java>// FormStartPosition.CenterScreen</java>
+</get>
+</property>
+<property>
+<name>CenterParent</name>
+<net-type>Integer</net-type>
+<get>
+<java>// FormStartPosition.CenterParent</java>
+</get>
+</property>
+</properties>
+</translation>
+

@@ -1,0 +1,26 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Xml.XmlNodeList</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Xml.XmlNodeListSupport</java>
+</class>
+<properties>
+<property>
+<name>Count</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.getCount()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Overridable MustOverride Function Item(ByVal index As Integer) As System.Xml.XmlNode</vb-signature>
+<java>${this}.item(${arg0})</java>
+</method>
+</methods>
+</translation>

@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.Image</net-classname>
+<inherits>System.Web.UI.WebControls.WebControl</inherits>
+<java>javax.faces.component.html.HtmlGraphicImage</java>
+</class>
+<properties>
+<property>
+<name>ImageUrl</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setUrl(${value})</java>
+</set>
+</property>
+</properties>
+</translation>
+

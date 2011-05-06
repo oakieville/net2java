@@ -1,0 +1,47 @@
+<project name="dnjlib" default="all" basedir=".">
+ <property file="./build.properties" />
+
+
+ <target name="init">
+  <tstamp />
+ </target>
+
+<target name="usage">
+	<echo message="NET2Java Library build options:"/>
+	<echo message=" clean: Cleans the build directory away"/>
+	<echo message=" build: Build the NET2Java library and create the distribution ZIP."/>
+	<echo message=" install: Install the NET2Java Library to your home directory."/>
+
+</target>
+
+<target name = "install" depends = "build">
+	<unzip src="build/dnj_translation_library.zip" dest="${user.home}/dnj"> 
+	</unzip>
+</target>
+
+ <target name="build" depends="init">
+  <mkdir dir="build" />
+   <javac srcdir="src" classpath="./jars/jsf-api.jar" destdir="build"/>
+    <copy todir="build/com/sun/"> 
+     <fileset dir="src/com/sun/"> 
+	<include name="**/*.xml"/>
+	<include name="**/*.java"/>  
+     </fileset> 
+    </copy>
+    <zip destfile="build/dnj_translation_library.zip" 
+		basedir="build/"
+		includes="com/sun/dn/**/*.*"
+ 	/>
+  </target>
+
+ <target name="clean" depends="init">
+	<echo message="${dn.lib.translationfiles.path}"/>
+
+    <delete dir="build" quiet="true" />
+    <delete dir="${dn.lib.translationfiles.path}"/>
+ </target>
+
+
+
+</project>
+

@@ -1,0 +1,8 @@
+<translation>
+<class>
+<net-classname>System.Date</net-classname>
+<alias>System.DateTime</alias>
+<inherits>System.Object</inherits>
+</class>
+</translation>
+

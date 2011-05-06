@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.FileInfo</net-classname>
+<inherits>System.IO.FileSystemInfo</inherits>
+<java>com.sun.dn.library.System.IO.FileInfoSupport</java>
+</class>
+<properties>
+<property>
+<name>Length</name>
+<net-type>Integer</net-type>
+<get>
+<java>(int) ${this}.length()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New( ByVal path As String  )</vb-signature>
+<java>new FileInfoSupport(${arg0})</java>
+<import>com.sun.dn.library.System.IO.FileInfoSupport</import>
+</method>
+</methods>
+</translation>

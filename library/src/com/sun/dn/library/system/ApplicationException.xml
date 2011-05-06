@@ -1,0 +1,24 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.ApplicationException</net-classname>
+<inherits>System.Exception</inherits>
+<java>com.sun.dn.library.System.ApplicationExceptionSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal message As String)</vb-signature>
+<java>new ApplicationExceptionSupport(${arg0})</java>
+<import>com.sun.dn.library.System.ApplicationExceptionSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new ApplicationExceptionSupport()</java>
+<import>com.sun.dn.library.System.ApplicationExceptionSupport</import>
+</method>
+</methods>
+</translation>
+

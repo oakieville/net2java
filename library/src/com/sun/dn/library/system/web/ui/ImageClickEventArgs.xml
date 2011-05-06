@@ -1,0 +1,12 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.ImageClickEventArgs</net-classname>
+<inherits>System.EventArgs</inherits>
+<java>com.sun.dn.library.System.Web.UI.ImageClickEventArgsSupport</java>
+</class>
+</translation>
+

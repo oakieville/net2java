@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.sun.dn.DNPlugin
+OpenIDE-Module-Layer: com/sun/dn/DNPlugin/layer.xml
+OpenIDE-Module-Localizing-Bundle: com/sun/dn/DNPlugin/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<translation>
+	<event-defn>
+		<net-classname>	System.Windows.Forms.BeforeExpand	</net-classname>
+		<net-type> System.Windows.Forms.TreeViewCancelEventArgs </net-type>
+		
+	</event-defn>
+	
+</translation>

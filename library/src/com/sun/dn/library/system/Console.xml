@@ -1,0 +1,75 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Console</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As String)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Shared Function Read() As Integer</vb-signature>
+<java>ConsoleSupport.read()</java>
+<import>com.sun.dn.library.System.ConsoleSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine()</vb-signature>
+<java>System.out.println()</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Double)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Long)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Shared Function ReadLine() As String</vb-signature>
+<java>ConsoleSupport.readLine()</java>
+<import>com.sun.dn.library.System.ConsoleSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal format As String,ByVal arg0 As Object)</vb-signature>
+<java>don't know</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Decimal)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Char)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As UInt64)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Single)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine( ByVal value As Integer)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As UInt32)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Boolean)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Sub WriteLine(ByVal value As Object)</vb-signature>
+<java>System.out.println(${arg0})</java>
+</method>
+</methods>
+</translation>
+

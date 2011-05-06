@@ -1,0 +1,17 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>Microsoft.VisualBasic.Information</net-classname>
+<runtime>true</runtime>
+</class>
+<methods>
+<method>
+<vb-signature>Public Function TypeName(ByVal VarName As Object) As String</vb-signature>
+<java>${arg0}.getClass().getName()</java>
+</method>
+</methods>
+</translation>
+

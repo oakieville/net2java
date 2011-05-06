@@ -1,0 +1,12 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Single</net-classname>
+<inherits>System.Object</inherits>
+<java>float</java>
+</class>
+</translation>
+

@@ -1,0 +1,19 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.Path</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.IO.PathSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function GetFileName(ByVal path As String) As String</vb-signature>
+<java>PathSupport.getFileName(${arg0})</java>
+<import>com.sun.dn.library.System.IO.PathSupport</import>
+</method>
+</methods>
+</translation>
+

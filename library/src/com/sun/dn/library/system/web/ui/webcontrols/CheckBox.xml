@@ -1,0 +1,11 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.CheckBox</net-classname>
+<inherits>System.Web.UI.WebControls.WebControl</inherits>
+</class>
+</translation>
+

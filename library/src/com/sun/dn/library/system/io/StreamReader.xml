@@ -1,0 +1,28 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.StreamReader</net-classname>
+<inherits>System.IO.TextReader</inherits>
+<java>com.sun.dn.library.System.IO.StreamReaderSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Overrides Public Sub Close()</vb-signature>
+<java>${this}.close()</java>
+</method>
+<method>
+<vb-signature>Overrides Public Function ReadLine() As String</vb-signature>
+<java>${this}.readLine()</java>
+<import>com.sun.dn.library.System.IO.StreamReaderSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New( ByVal stream As Stream)</vb-signature>
+<java>new StreamReaderSupport(${arg0})</java>
+<import>com.sun.dn.library.System.IO.StreamReaderSupport</import>
+</method>
+</methods>
+</translation>
+
