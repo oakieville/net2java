@@ -1,0 +1,42 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.PictureBox</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>PictureBoxSupport</java>
+</class>
+<properties>
+<property>
+<name>Image</name>
+<net-type>System.Drawing.Image</net-type>
+<set>
+<java>// ${this}.setImage(${value})</java>
+</set>
+</property>
+<property>
+<name>BorderStyle</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setBorderStyle(${value})</java>
+</set>
+</property>
+<property>
+<name>SizeMode</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setSizeMode(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new PictureBoxSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.*</import>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,44 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Button</net-classname>
+<inherits>System.Windows.Forms.ButtonBase</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.ButtonSupport</java>
+</class>
+<events>
+<event>
+<name>Click</name>
+<net-classname>System.Windows.Forms.Click</net-classname>
+<add-listener>addActionListener</add-listener>
+<listener-method>actionPerformed</listener-method>
+<java-listener-ifc>java.awt.event.ActionListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>DialogResult</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setDialogResult(${value})</java>
+</set>
+</property>
+<property>
+<name>Anchor</name>
+<net-type>Integer</net-type>
+<set>
+<java>${this}.setAnchorHack()</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new ButtonSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.ButtonSupport</import>
+</method>
+</methods>
+</translation>
+

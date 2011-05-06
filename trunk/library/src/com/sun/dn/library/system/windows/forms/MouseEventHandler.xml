@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<delegate>
+<net-classname>System.Windows.Forms.MouseEventHandler</net-classname>
+<inherits>System.Object</inherits>
+<java>java.lang.Object</java>
+</delegate>
+<methods>
+<method>
+<vb-signature>Public Delegate Sub MouseEventHandler(  ByVal sender As Object, ByVal e As MouseEventArgs)</vb-signature>
+<java>${this}.newMethod1(${arg0})</java>
+</method>
+</methods>
+</translation>
+

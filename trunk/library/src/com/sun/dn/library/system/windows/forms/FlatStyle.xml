@@ -1,0 +1,29 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.Windows.Forms.FlatStyle</net-classname>
+<inherits>System.Object</inherits>
+</enumeration>
+<properties>
+<property>
+<name>Flat</name>
+<net-type>FlatStyle</net-type>
+<get>
+<java>FlatStyleSupport.FLAT</java>
+<import>com.sun.dn.library.System.Windows.Forms.FlatStyleSupport</import>
+</get>
+</property>
+<property>
+<name>Popup</name>
+<net-type>FlatStyle</net-type>
+<get>
+<java>FlatStyleSupport.POPUP</java>
+<import>com.sun.dn.library.System.Windows.Forms.FlatStyleSupport</import>
+</get>
+</property>
+</properties>
+</translation>
+

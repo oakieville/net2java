@@ -1,0 +1,30 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.IO.FileMode</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.IO.FileModeSupport</java>
+</enumeration>
+<properties>
+<property>
+<name>Open</name>
+<net-type>Integer</net-type>
+<get>
+<java>FileModeSupport.OPEN</java>
+<import>com.sun.dn.library.System.IO.FileModeSupport</import>
+</get>
+</property>
+<property>
+<name>OpenOrCreate</name>
+<net-type>Integer</net-type>
+<get>
+<java>FileModeSupport.OPENORCREATE</java>
+<import>com.sun.dn.library.System.IO.FileModeSupport</import>
+</get>
+</property>
+</properties>
+</translation>
+

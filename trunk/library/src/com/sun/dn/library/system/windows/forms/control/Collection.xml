@@ -1,0 +1,19 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Control.Collection</net-classname>
+<inherits>System.Object</inherits>
+<implements>System.Collections.IList,System.Collections.ICollection,System.Collections.IEnumerable,System.ICloneable</implements>
+<java>com.sun.dn.library.System.Windows.Forms.Control.ControlCollectionSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Overridable Sub Add(ByVal value As Control)</vb-signature>
+<java>${this}.add(${arg0})</java>
+</method>
+</methods>
+</translation>
+

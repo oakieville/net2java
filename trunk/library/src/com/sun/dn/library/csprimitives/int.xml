@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+	<class>
+		<net-classname> int </net-classname>
+		<alias>System.Integer</alias>
+
+	</class>
+	<methods>
+		<method>
+			<vb-signature>Overloads Public Shared Function Parse(ByVal s As String) As Integer</vb-signature>
+			<java>intSupport.parseInt(${arg0})</java>
+			<import> com.sun.dn.library.CSPrimitives.intSupport </import>
+		</method>		
+	</methods>
+
+	
+	
+</translation>

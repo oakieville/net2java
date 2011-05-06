@@ -1,0 +1,44 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>Microsoft.VisualBasic.Strings</net-classname>
+<runtime>true</runtime>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function InStr(Optional ByVal Start As Integer, ByVal String1 As String, ByVal String2 As String) As Integer</vb-signature>
+<java>${arg1}.indexOf(${arg2}, ${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Shared Function Mid(ByVal Str As String, ByVal Start As Integer, ByVal Length As Integer) As String</vb-signature>
+<java>${arg0}.substring( ${arg1} - 1 , ${arg1} -1 + ${arg2})</java>
+</method>
+<method>
+<vb-signature>Public Shared Function Left(ByVal Str As String, ByVal Length As Integer) As String</vb-signature>
+<java>${arg0}.substring(0, ${arg1} )</java>
+</method>
+<method>
+<vb-signature>Public Shared Function InStr(ByVal String1 As String, ByVal String2 As String) As Integer</vb-signature>
+<java>${arg0}.indexOf(${arg1})</java>
+</method>
+<method>
+<vb-signature>Public Shared Function UCase(ByVal Value As String) As String</vb-signature>
+<java>${arg0}.toUpperCase()</java>
+</method>
+<method>
+<vb-signature>Public Shared Function Mid(ByVal Str As String, ByVal Start As Integer) As String</vb-signature>
+<java>${arg0}.substring(${arg1} -1, ${arg0}.length())</java>
+</method>
+<method>
+<vb-signature>Public Shared Function Trim(ByVal Str As String) As String</vb-signature>
+<java>${arg0}.trim()</java>
+</method>
+<method>
+<vb-signature>Public Shared Function Len(ByVal str As String) As Integer</vb-signature>
+<java>${arg0}.length()</java>
+</method>
+</methods>
+</translation>

@@ -1,0 +1,52 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.CheckBox</net-classname>
+<inherits>System.Windows.Forms.ButtonBase</inherits>
+<java>javax.swing.JCheckBox</java>
+</class>
+<events>
+<event>
+<name>CheckedChanged</name>
+<net-classname>System.Windows.Forms.CheckedChanged</net-classname>
+<add-listener>addChangeListener</add-listener>
+<listener-method>stateChanged</listener-method>
+<java-listener-ifc>javax.swing.event.ChangeListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>CheckState</name>
+<net-type>Integer</net-type>
+<set>
+<java>CheckBoxSupport.setState(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.CheckBoxSupport</import>
+</set>
+<get>
+<java>CheckBoxSupport.getState(${this})</java>
+<import>com.sun.dn.library.System.Windows.Forms.CheckBoxSupport</import>
+</get>
+</property>
+<property>
+<name>Checked</name>
+<net-type>Boolean</net-type>
+<set>
+<java>${this}.setSelected(${value})</java>
+</set>
+<get>
+<java>${this}.isSelected()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new JCheckBox()</java>
+<import>javax.swing.JCheckBox</import>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,28 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.StreamWriter</net-classname>
+<inherits>System.IO.TextWriter</inherits>
+<java>com.sun.dn.library.System.IO.StreamWriterSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal stream As Stream)</vb-signature>
+<java>new StreamWriterSupport(${arg0})</java>
+<import>com.sun.dn.library.System.IO.StreamWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overrides Public Sub Close()</vb-signature>
+<java>${this}.close()</java>
+<import>com.sun.dn.library.System.IO.StreamWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overrides Overloads Public Sub Write(ByVal value As String)</vb-signature>
+<java>${this}.write(${arg0})</java>
+<import>com.sun.dn.library.System.IO.StreamWriterSupport</import>
+</method>
+</methods>
+</translation>

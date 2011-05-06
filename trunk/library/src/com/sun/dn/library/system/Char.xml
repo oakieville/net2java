@@ -1,0 +1,17 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Char</net-classname>
+<inherits>System.Object</inherits>
+<java>char</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function ToString (ByVal  c As Char) As String</vb-signature>
+<java>new Character(${arg0}).toString()</java>
+</method>
+</methods>
+</translation>

@@ -1,0 +1,24 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.TreeViewEventArgs</net-classname>
+<inherits>System.EventArgs</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.TreeViewEventArgsSupport</java>
+</class>
+<properties>
+<property>
+<name>Node</name>
+<net-type>System.Windows.Forms.TreeNode</net-type>
+<set>
+<java>${this}.setNode( ${value} )</java>
+</set>
+<get>
+<java>${this}.getNode()</java>
+</get>
+</property>
+</properties>
+</translation>
+

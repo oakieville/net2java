@@ -1,0 +1,45 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.DateTime</net-classname>
+<inherits>System.Object</inherits>
+<java>java.util.Date</java>
+</class>
+<properties>
+<property>
+<name>Day</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.getDate()</java>
+</get>
+</property>
+<property>
+<name>Year</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.getYear()</java>
+</get>
+</property>
+<property>
+<name>Month</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.getMonth()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Overridable Function ToString() As String</vb-signature>
+<java>"" + ${this}</java>
+</method>
+<method>
+<vb-signature>Public Sub New(ByVal year As Integer, ByVal month As Integer, ByVal day As Integer)</vb-signature>
+<java>new Date(${arg0}, ${arg1},${arg2})</java>
+</method>
+</methods>
+</translation>
+

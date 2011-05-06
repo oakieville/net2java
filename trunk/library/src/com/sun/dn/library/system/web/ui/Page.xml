@@ -1,0 +1,28 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.Page</net-classname>
+<inherits>System.Web.UI.TemplateControl</inherits>
+<java>com.sun.dn.library.System.Web.UI.PageSupport</java>
+</class>
+<events>
+<event>
+<name>Init</name>
+<net-classname>System.Web.UI.Init</net-classname>
+<add-listener>addActionListenerforInitofWebpage</add-listener>
+<listener-method>processAction</listener-method>
+<java-listener-ifc>javax.faces.event.ActionListener</java-listener-ifc>
+</event>
+<event>
+<name>Load</name>
+<net-classname>System.Web.UI.Load</net-classname>
+<add-listener>addActionListenerforLoadofWebpage</add-listener>
+<listener-method>processAction</listener-method>
+<java-listener-ifc>javax.faces.event.ActionListener</java-listener-ifc>
+</event>
+</events>
+</translation>
+

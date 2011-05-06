@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.Xml.Formatting</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Xml.XmlNodeSupport</java>
+</enumeration>
+<properties>
+<property>
+<name>Indented</name>
+<net-type>Formatting</net-type>
+<get>
+<java>0</java>
+</get>
+</property>
+</properties>
+</translation>
+

@@ -1,0 +1,26 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Environment</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>NewLine</name>
+<net-type>String</net-type>
+<get>
+<java>"\n"</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Shared Sub Exit(ByVal exitCode As Integer)</vb-signature>
+<java>System.exit(${arg0})</java>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,20 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.Button</net-classname>
+<inherits>System.Web.UI.WebControls.WebControl</inherits>
+<java>javax.faces.component.html.HtmlCommandButton</java>
+</class>
+<events>
+<event>
+<name>Click</name>
+<net-classname>System.Web.UI.WebControls.Click</net-classname>
+<add-listener>addActionListenerforButtonClick</add-listener>
+<listener-method>processAction</listener-method>
+<java-listener-ifc>javax.faces.event.ActionListener</java-listener-ifc>
+</event>
+</events>
+</translation>

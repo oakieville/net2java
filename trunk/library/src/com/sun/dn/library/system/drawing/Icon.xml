@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.Icon</net-classname>
+<inherits>System.MarshalByRefObject</inherits>
+<java>javax.swing.Icon</java>
+</class>
+<properties>
+<property>
+<name>Image</name>
+<net-type>Integer</net-type>
+<get>
+<java>new BevelBorder(BevelBorder.RAISED)</java>
+<import>javax.swing.border.*</import>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Function ToBitmap() As Bitmap</vb-signature>
+<java>Icon.toBitmap()</java>
+</method>
+</methods>
+</translation>

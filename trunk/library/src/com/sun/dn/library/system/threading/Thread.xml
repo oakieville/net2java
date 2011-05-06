@@ -1,0 +1,26 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Threading.Thread</net-classname>
+<inherits>System.Object</inherits>
+<java>java.lang.Thread</java>
+</class>
+<properties>
+<property>
+<name>CurrentThread</name>
+<net-type>System.Threading.Thread</net-type>
+<get>
+<java>${this}.currentThread()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Shared Sub Sleep(  ByVal millisecondsTimeout As Integer  )</vb-signature>
+<java>${this}.newMethod1(${arg0})</java>
+</method>
+</methods>
+</translation>

@@ -1,0 +1,17 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<interface>
+<net-classname>System.ComponentModel.IContainer</net-classname>
+<java>com.sun.dn.library.System.ComponentModel.IContainerSupport</java>
+</interface>
+<methods>
+<method>
+<vb-signature>Sub Dispose()</vb-signature>
+<java>dispose()</java>
+</method>
+</methods>
+</translation>
+

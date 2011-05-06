@@ -1,0 +1,185 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Form</net-classname>
+<inherits>System.Windows.Forms.ContainerControl</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.FormAdapter</java>
+</class>
+<events>
+<event>
+<name>Load</name>
+<net-classname>System.Windows.Forms.Load</net-classname>
+<add-listener>addWindowListener</add-listener>
+<listener-method>windowOpened</listener-method>
+<java-listener-ifc>java.awt.event.WindowListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Owner</name>
+<net-type>System.Windows.Forms.Form</net-type>
+<get>
+<java>${this}.getFormOwner()</java>
+</get>
+<set>
+<java>${this}.setFormOwner(${value})</java>
+</set>
+</property>
+<property>
+<name>MaximizeBox</name>
+<net-type>Boolean</net-type>
+<set>
+<java>// form method ${this}.setMaximizeBox(${value})</java>
+</set>
+</property>
+<property>
+<name>Icon</name>
+<net-type>System.Drawing.Icon</net-type>
+<get>
+<java>${this}.getIcon()</java>
+</get>
+<set>
+<java>${this}.setIcon(${value})</java>
+</set>
+<set>
+<java>this.setIcon( ${value} )</java>
+</set>
+</property>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setTitle(${value})</java>
+</set>
+<get>
+<java>${this}.getTitle()</java>
+</get>
+</property>
+<property>
+<name>CancelButton</name>
+<net-type>System.Windows.Forms.IButtonControl</net-type>
+<set>
+<java>${this}.setCancelButton(${value})</java>
+</set>
+</property>
+<property>
+<name>StartPosition</name>
+<net-type>Integer</net-type>
+<set>
+<java>// form method ${this}.setStartPosition(${value})</java>
+</set>
+</property>
+<property>
+<name>ClientSize</name>
+<net-type>System.Drawing.Size</net-type>
+<set>
+<java>this.setSize((${value}.width + 8), (${value}.height + 50))</java>
+</set>
+</property>
+<property>
+<name>FormBorderStyle</name>
+<net-type>Integer</net-type>
+<get>
+<java>// ${this}.getFormBorderStyle() @Form.xml</java>
+</get>
+<set>
+<java>// ${this}.setFormBorderStyle(${value}) @Form.xml</java>
+</set>
+<set>
+<java>// form method ${this}.setFormBorderStyle(${value})</java>
+</set>
+</property>
+<property>
+<name>AcceptButton</name>
+<net-type>System.Windows.Forms.IButtonControl</net-type>
+<set>
+<java>${this}.setAcceptButton(${value})</java>
+</set>
+</property>
+<property>
+<name>AutoScaleBaseSize</name>
+<net-type>System.Drawing.Size</net-type>
+<set>
+<java>${this}.setSize((${value}.width), (${value}.height))</java>
+</set>
+</property>
+<property>
+<name>Menu</name>
+<net-type>System.Windows.Forms.MainMenu</net-type>
+<get>
+<java>${this}.getJMenuBar()</java>
+</get>
+<set>
+<java>${this}.setJMenuBar(${value})</java>
+</set>
+</property>
+<property>
+<name>Visible</name>
+<net-type>Boolean</net-type>
+<set>
+<java>${this}.setVisible(${value})</java>
+</set>
+</property>
+<property>
+<name>ShowInTaskbar</name>
+<net-type>Boolean</net-type>
+<set>
+<java>// form method ${this}.setShowInTaskbarBox(${value})</java>
+</set>
+</property>
+<property>
+<name>MinimumSize</name>
+<net-type>System.Drawing.Size</net-type>
+<get>
+<java>${this}.getMinimumSize()</java>
+</get>
+<set>
+<java>${this}.setMinimumSize(${value})</java>
+</set>
+</property>
+<property>
+<name>SizeGripStyle</name>
+<net-type>Integer</net-type>
+<get>
+<java>// ${this}.getSizeGripStyle() @Form.xml</java>
+</get>
+<set>
+<java>// ${this}.setSizeGripStyle() @Form.xml</java>
+</set>
+</property>
+<property>
+<name>MinimizeBox</name>
+<net-type>Boolean</net-type>
+<set>
+<java>// form method ${this}.setMinimizeBox(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Function ShowDialog(ByVal owner As IWin32Window) As DialogResult</vb-signature>
+<java>${this}.showDialog(${arg0})</java>
+<import>javax.swing.JOptionPane</import>
+</method>
+<method>
+<vb-signature>Overloads Public Overridable Sub Dispose() Implements IDisposable.Dispose</vb-signature>
+<java>${this}.disposeForm()</java>
+</method>
+<method>
+<vb-signature>Public Sub SuspendLayout()</vb-signature>
+<java>super.suspendLayout()</java>
+</method>
+<method>
+<vb-signature>Public Sub Close()</vb-signature>
+<java>${this}.close()</java>
+</method>
+<method>
+<vb-signature>Overloads Public Sub ResumeLayout(ByVal performLayout As Boolean)</vb-signature>
+<java>super.resumeLayout(${arg0})</java>
+</method>
+</methods>
+</translation>
+

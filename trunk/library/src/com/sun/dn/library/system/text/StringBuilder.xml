@@ -1,0 +1,39 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Text.StringBuilder</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Text.StringBuilderSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Public Function Replace(ByVal oldValue As String, ByVal newValue As String) As StringBuilder</vb-signature>
+<java>${this}.replace(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.Text.StringBuilderSupport</import>
+</method>
+<method>
+<vb-signature>Public Function Remove(ByVal startIndex As Integer, ByVal length As Integer) As StringBuilder</vb-signature>
+<java>${this}.remove(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.Text.StringBuilderSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function Insert(ByVal index As Integer, ByVal value As String) As StringBuilder</vb-signature>
+<java>${this}.insert(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.Text.StringBuilderSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New(ByVal value As String)</vb-signature>
+<java>new StringBuilderSupport(${arg0})</java>
+<import>com.sun.dn.library.System.Text.StringBuilderSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function AppendFormat(ByVal format As String, ByVal arg0 As Object, ByVal arg1 As Object) As StringBuilder</vb-signature>
+<java>${this}.appendFormat(${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.Text.StringBuilderSupport</import>
+</method>
+</methods>
+</translation>
+

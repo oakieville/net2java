@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Integer</net-classname>
+<inherits>System.Object</inherits>
+<java>int</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function Parse(ByVal s As String) As Integer</vb-signature>
+<java>Integer.parseInt(${arg0})</java>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,41 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Xml.XmlDocument</net-classname>
+<inherits>System.Xml.XmlNode</inherits>
+<java>com.sun.dn.library.System.Xml.XmlDocumentSupport</java>
+</class>
+<properties>
+<property>
+<name>FirstChild</name>
+<net-type>System.Xml.XmlNode</net-type>
+<get>
+<java>${this}.getFirstChild()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Overridable Sub Save(  ByVal filename As String )</vb-signature>
+<java>${this}.save(${arg0})</java>
+<import>com.sun.dn.library.System.Xml.XmlDocumentSupport</import>
+</method>
+<method>
+<vb-signature>Public Function CreateElement(ByVal name As String) As System.Xml.XmlElement</vb-signature>
+<java>${this}.createElement(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new XmlDocumentSupport()</java>
+<import>com.sun.dn.library.System.Xml.XmlDocumentSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Overridable Sub Load( ByVal filename As String  )</vb-signature>
+<java>${this}.load(${arg0})</java>
+<import>com.sun.dn.library.System.Xml.XmlDocumentSupport</import>
+</method>
+</methods>
+</translation>

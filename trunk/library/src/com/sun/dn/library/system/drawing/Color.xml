@@ -1,0 +1,30 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.Color</net-classname>
+<inherits>System.Object</inherits>
+<java>java.awt.Color</java>
+</class>
+<properties>
+<property>
+<name>Black</name>
+<net-type>Color</net-type>
+<get>
+<java>Color.BLACK</java>
+<import>java.awt.Color</import>
+</get>
+</property>
+<property>
+<name>Transparent</name>
+<net-type>Color</net-type>
+<get>
+<java>Color.LIGHT_GRAY</java>
+<import>java.awt.Color</import>
+</get>
+</property>
+</properties>
+</translation>
+

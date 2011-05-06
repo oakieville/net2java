@@ -1,0 +1,85 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.NumericUpDown</net-classname>
+<inherits>System.Windows.Forms.UpDownBase</inherits>
+<implements>System.ComponentModel.ISupportInitialize</implements>
+<java>javax.swing.JSpinner</java>
+</class>
+<events>
+<event>
+<name>ValueChanged</name>
+<net-classname>System.Windows.Forms.Control.ValueChanged</net-classname>
+<add-listener>addChangeListener</add-listener>
+<listener-method>stateChanged</listener-method>
+<java-listener-ifc>javax.swing.event.ChangeListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Minimum</name>
+<net-type>Decimal</net-type>
+<set>
+<java>((SpinnerNumberModel) ${this}.getModel()).setMinimum(new Double(${value}))</java>
+<import>javax.swing.SpinnerNumberModel</import>
+</set>
+<get>
+<java>((Double) ((SpinnerNumberModel) ${this}.getModel()).getMinimum()).doubleValue()</java>
+<import>javax.swing.SpinnerNumberModel</import>
+</get>
+</property>
+<property>
+<name>Value</name>
+<net-type>Decimal</net-type>
+<set>
+<java>${this}.setValue( new Double( ${value} )  )</java>
+</set>
+<get>
+<java>((Double) ${this}.getValue()).doubleValue()</java>
+</get>
+</property>
+<property>
+<name>Maximum</name>
+<net-type>Decimal</net-type>
+<set>
+<java>((SpinnerNumberModel) ${this}.getModel()).setMaximum(new Double(${value}))</java>
+<import>javax.swing.SpinnerNumberModel</import>
+</set>
+<get>
+<java>((SpinnerNumberModel) ${this}.getModel()).getMaximum().doubleValue()</java>
+<import>javax.swing.SpinnerNumberModel</import>
+</get>
+</property>
+<property>
+<name>Increment</name>
+<net-type>Decimal</net-type>
+<set>
+<java>((SpinnerNumberModel) ${this}.getModel()).setStepSize(new Double(${value}))</java>
+<import>javax.swing.SpinnerNumberModel</import>
+</set>
+<get>
+<java>((Double) ((SpinnerNumberModel) ${this}.getModel()).getStepSize()).doubleValue()</java>
+<import>javax.swing.SpinnerNumberModel</import>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new JSpinner()</java>
+<import>javax.swing.JSpinner</import>
+</method>
+<method>
+<vb-signature>Public Sub BeginInit() Implements ISupportInitialize.BeginInit</vb-signature>
+<java>NumericUpDownSupport.init(${this})</java>
+<import>com.sun.dn.library.System.Windows.Forms.NumericUpDownSupport</import>
+</method>
+<method>
+<vb-signature>Public Overridable Sub EndInit() Implements ISupportInitialize.EndInit</vb-signature>
+<java>// ${this} end init</java>
+</method>
+</methods>
+</translation>

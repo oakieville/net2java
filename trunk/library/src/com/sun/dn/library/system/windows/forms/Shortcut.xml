@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.Shortcut</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>F5</name>
+<net-type>Integer</net-type>
+<get>
+<java>ShortcutSupport.F5</java>
+<import>com.sun.dn.library.System.Windows.Forms.ShortcutSupport</import>
+</get>
+</property>
+</properties>
+</translation>
+

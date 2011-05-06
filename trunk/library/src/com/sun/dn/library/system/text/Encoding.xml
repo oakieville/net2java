@@ -1,0 +1,21 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.Text.Encoding</net-classname>
+<inherits>System.Object</inherits>
+</enumeration>
+<properties>
+<property>
+<name>UTF8</name>
+<net-type>Encoding</net-type>
+<get>
+<java>EncodingSupport.UTF8</java>
+<import>com.sun.dn.library.System.Text.EncodingSupport</import>
+</get>
+</property>
+</properties>
+</translation>
+

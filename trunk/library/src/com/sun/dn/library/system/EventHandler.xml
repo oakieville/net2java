@@ -1,0 +1,19 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<delegate>
+<net-classname>System.EventHandler</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.EventHandlerSupport</java>
+</delegate>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal args As System.EventArgs)</vb-signature>
+<java>new EventHandlerSupport(${arg0})</java>
+<import>com.sun.dn.library.System.EventHandlerSupport</import>
+</method>
+</methods>
+</translation>
+

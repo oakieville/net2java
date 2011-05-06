@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.ListBox.ObjectCollection</net-classname>
+<inherits>System.Object</inherits>
+<implements>System.Collections.IList,System.Collections.ICollection,System.Collections.IEnumerable</implements>
+<java>com.sun.dn.library.System.Windows.Forms.ListBox.ObjectCollection</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Overridable Sub Clear()</vb-signature>
+<java>${this}.clear()</java>
+</method>
+<method>
+<vb-signature>Public Function Add( ByVal item As Object ) As Integer</vb-signature>
+<java>${this}.add(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Sub AddRange(ByVal items() As Object)</vb-signature>
+<java>${this}.addArray(${arg0})</java>
+</method>
+</methods>
+</translation>
+

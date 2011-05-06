@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<enumeration>
+<net-classname>System.Windows.Forms.ScrollBars</net-classname>
+<inherits>System.Object</inherits>
+</enumeration>
+<properties>
+<property>
+<name>Both</name>
+<net-type>Integer</net-type>
+<get>
+<java>javaExpression</java>
+</get>
+</property>
+<property>
+<name>Vertical</name>
+<net-type>Integer</net-type>
+<get>
+<java>0</java>
+</get>
+</property>
+</properties>
+</translation>
+

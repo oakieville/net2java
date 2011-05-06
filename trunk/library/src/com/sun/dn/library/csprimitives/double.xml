@@ -1,0 +1,13 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+	<class>
+		<net-classname> double </net-classname>
+		<alias>System.Double</alias>
+
+	</class>
+	
+	
+</translation>

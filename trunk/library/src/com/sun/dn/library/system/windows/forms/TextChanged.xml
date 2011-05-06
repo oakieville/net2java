@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<translation>
+	<event-defn>
+		<net-classname>System.Windows.Forms.Control.TextChanged</net-classname>
+		<net-type>System.EventArgs</net-type>
+		
+	</event-defn>
+	
+</translation>

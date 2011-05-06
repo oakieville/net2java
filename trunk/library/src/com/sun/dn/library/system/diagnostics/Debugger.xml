@@ -1,0 +1,17 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Diagnostics.Debugger</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Sub Break()</vb-signature>
+<java>// a vb-signature inserted breakpoint</java>
+</method>
+</methods>
+</translation>
+

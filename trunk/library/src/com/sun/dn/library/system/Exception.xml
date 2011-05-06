@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Exception</net-classname>
+<inherits>System.Object</inherits>
+<java>Exception</java>
+</class>
+<properties>
+<property>
+<name>Message</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getMessage()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal message As String)</vb-signature>
+<java>new Exception(${arg0})</java>
+</method>
+</methods>
+</translation>
+

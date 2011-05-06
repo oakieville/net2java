@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.Stream</net-classname>
+<inherits>System.MarshalByRefObject</inherits>
+<java>com.sun.dn.library.System.IO.StreamSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Overridable Sub Close()</vb-signature>
+<java>${this}.close()</java>
+</method>
+</methods>
+</translation>
+

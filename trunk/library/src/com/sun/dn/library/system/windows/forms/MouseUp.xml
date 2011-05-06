@@ -1,0 +1,7 @@
+<translation>
+<event-defn>
+<net-classname>System.Windows.Forms.MouseUp</net-classname>
+<net-type>System.Windows.Forms.MouseEventArgs</net-type>
+</event-defn>
+</translation>
+

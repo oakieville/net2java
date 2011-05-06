@@ -1,0 +1,109 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.TextBox</net-classname>
+<inherits>System.Windows.Forms.TextBoxBase</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.TextBoxSupport</java>
+</class>
+<properties>
+<property>
+<name>ScrollBars</name>
+<net-type>Integer</net-type>
+<set>
+<java>// text box set scrollbars to ${value}</java>
+</set>
+<get>
+<java>// text box get scrollbars</java>
+</get>
+</property>
+<property>
+<name>TextAlign</name>
+<net-type>Integer</net-type>
+<get>
+<java>// ${this}.getTextAlign() @TextBox.xml</java>
+</get>
+<set>
+<java>// ${this}.setTextAlign(${value}) @TextBox.xml</java>
+</set>
+</property>
+<property>
+<name>Multiline</name>
+<net-type>Boolean</net-type>
+<get>
+<java>true</java>
+</get>
+<set>
+<java>// set Text area to multiline</java>
+</set>
+</property>
+<property>
+<name>TabIndex</name>
+<net-type>Integer</net-type>
+<set>
+<java>VBFocusTraversalPolicy.setOrder(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.VBFocusTraversalPolicy</import>
+</set>
+</property>
+<property>
+<name>Size</name>
+<net-type>System.Drawing.Size</net-type>
+<set>
+<java>${this}.setSize(${value})</java>
+</set>
+<get>
+<java>${this}.getSize()</java>
+</get>
+</property>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getText()</java>
+</get>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+</property>
+<property>
+<name>Name</name>
+<net-type>String</net-type>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+<get>
+<java>${this}.getText()</java>
+</get>
+</property>
+<property>
+<name>Location</name>
+<net-type>System.Drawing.Point</net-type>
+<get>
+<java>${this}.getLocation()</java>
+</get>
+<set>
+<java>${this}.setLocation(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub Clear()</vb-signature>
+<java>${this}.setText("")</java>
+<import>com.sun.dn.library.System.Windows.Forms.TextBoxSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new TextBoxSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.TextBoxSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub AppendText(ByVal text As String)</vb-signature>
+<java>${this}.setText(${this}.getText() + ${arg0})</java>
+<import>com.sun.dn.library.System.Windows.Forms.TextBoxSupport</import>
+</method>
+</methods>
+</translation>
+

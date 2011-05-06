@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+
+
+<project name="lx" default="all" basedir=".">
+
+  <property file="build.properties" />
+  <property file="project.properties" />
+
+  <target name="usage">
+    <echo message="Build Targets" />
+    <echo message="" />
+    <echo message="" />
+    <echo message=" b u i l d i n g" />
+
+    <echo message="" />
+    <echo message="build - build the parser" />
+    <echo message="clean - clean up the build" />
+ <echo message="" />
+    <echo message=" r u n n i n g " />
+
+    <echo message="" />
+    <echo message="openprojects - unzip the test and demo applications into the project directory" />
+    <echo message="vbtests - run all the vb tests" />
+    <echo message="cstests - run all the c# tests" />
+    <echo message="demos - run all the demo applications" />
+    <echo message="closeprojects - zip up all the test and demo applications in the project directory" />
+ <echo message="" />
+    <echo message=" m a k i n g  t h e  N e t B e a n s  P l u g i n" />
+
+    <echo message="" />
+    <echo message="plugin - copy the parser source code into the DNPlugin NetBeans project" />
+  </target>
+
+
+ <target name="init">
+    <tstamp />
+  </target>
+
+<target name="all" depends="usage">
+  </target>
+
+<target name="web" depends="init, build, packageweb, cleanweb, startws, deployweb,  browse, stopws">
+</target>
+
+<target name="gui" depends="init, cleanapp, build, startgui">
+</target>
+
+<target name="cmd" depends="init, cleanapp, build, startcmd">
+</target>
+
+<target name="dev" depends="init, clean, build">
+</target>
+
+<target name="openprojects" depends="init">
+	<unzip src="projects.zip" dest="projects"/>
+</target>
+
+<target name="closeprojects" depends="init">
+	
+	<zip destfile="projects.zip" 
+		basedir="projects/"/>
+	
+</target>
+
+
+<target name="plugin" depends="dev">
+	<copy todir="plugin/DNPlugin/src">
+    		<fileset dir="src">
+			<exclude name="**/*Test*"/> 
+		</fileset>
+	</copy>
+</target>
+
+<target name="opengui" depends="init, build">
+	<java classname="com.sun.dn.gui.GuiMain"
+          classpath="./build"
+		fork="true">
+		<arg value="interpreter"/>
+		<arg value="${dn.lib.translationfiles.path}"/>
+		<arg value="tmp"/>
+    </java>
+</target>
+
+<target name="importvb" depends="init, build">
+	<java classname="com.sun.dn.gui.ImportPanel"
+          classpath="./build"
+		fork="true">
+	<arg value="vb"/>
+    </java>
+</target>
+
+<target name="importcs" depends="init, build">
+	<java classname="com.sun.dn.gui.ImportPanel"
+          classpath="./build"
+		fork="true">
+	<arg value="cs"/>
+    </java>
+</target>
+
+
+
+
+<target name="libgui" depends="init, build">
+	<java classname="com.sun.dn.library.LibraryEntryFrame"
+          classpath="./build"
+		fork="true">
+		<arg value="${dn.lib.src}"/>
+      </java>
+</target>
+
+<target name="browse" depends="init">
+	<exec executable="c://Program Files//Internet Explorer//iexplore.exe" >
+		<arg line="http://localhost:8080/vb"> </arg>
+	</exec>
+</target>
+
+<target name="deployweb" depends="init">
+  <copy todir="${tomcat.home}webapps/vb">
+    	<fileset dir="webtmp"/>
+  </copy>
+</target>
+
+<target name="cleanweb" depends="init">
+  <delete dir="${tomcat.home}webapps/vb/" quiet="true" />
+</target>
+
+<target name="build" depends="init">
+    <mkdir dir="build" />
+    <javac srcdir="src" classpath="${java.classpath}" destdir="build"/>
+</target>
+
+  <target name="packageweb" depends="init">
+	<java classname="com.sun.dn.container.web.WebMain"
+		 classpath="${java.classpath}">
+		<arg value="${dn.language}"/>
+		<arg value="${dn.translation.policy}"/>
+		<arg value="${dn.debug}"/>
+		<arg value="${dn.lib.translationfiles.path}"/>
+		<arg value="${dn.lib.classes.classpath}"/>
+		<arg value="${j2ee.home}/lib/j2ee.jar;${j2ee.home}/lib/jsf-api.jar"/>
+		<arg value="${java.webproject.dir}"/>
+		<arg value="${dn.project}"/>
+	</java>
+	<unzip src="library/build/dnj_rt_lib.zip" dest="webtmp/WEB-INF/classes"/>
+  </target>
+
+  <target name="startws" depends="init">
+	<exec executable="${tomcat.home}bin/startup.bat" spawn="true" >
+	</exec>
+  </target>
+
+  <target name="stopws" depends="init">
+	<exec executable="${tomcat.home}bin/shutdown.bat" spawn="false" >
+	</exec>
+  </target> 
+
+  <target name="startgui" depends="init">
+	<java classname="com.sun.dn.container.gui.CommandMain"
+          classpath="${java.classpath}">
+	<arg value="${dn.language}"/>
+	<arg value="gui"/>
+	<arg value="${dn.translation.policy}"/>
+	<arg value="${dn.debug}"/>
+	<arg value="${dn.lib.translationfiles.path}"/>
+      <arg value="${dn.lib.classes.classpath}"/>
+      <arg value="${java.project.dir}"/>
+      <arg value="${dn.mainClass}"/>
+	<arg value="${dn.project}"/>
+    </java>
+ </target>
+
+
+
+ <target name="vbtests" depends="init, build, cleantests">
+	<java classname="com.sun.dn.test.DNTestMain"
+          classpath="${java.classpath}">
+		<arg value="${vbtest.file}"/>
+		<arg value="${dn.testout.dir}"/>
+		<arg value="${dn.lib.translationfiles.path}"/>
+      	<arg value="${dn.lib.classes.classpath}"/>
+    </java>
+ </target>
+
+<target name="demos" depends="init, build">
+	<java classname="com.sun.dn.test.DNTestMain"
+          classpath="${java.classpath}">
+		<arg value="${demos.file}"/>
+		<arg value="${java.project.dir}"/>
+		<arg value="${dn.lib.translationfiles.path}"/>
+      	<arg value="${dn.lib.classes.classpath}"/>
+    </java>
+ </target>
+
+ <target name="cstests" depends="init, build, cleantests">
+	<java classname="com.sun.dn.test.DNTestMain"
+          classpath="${java.classpath}">
+		<arg value="${cstest.file}"/>
+		<arg value="${dn.testout.dir}"/>
+		<arg value="${dn.lib.translationfiles.path}"/>
+      	<arg value="${dn.lib.classes.classpath}"/>
+    </java>
+ </target>
+
+
+
+<target name="startcmd" depends="init">
+	<java classname="com.sun.dn.container.gui.CommandMain"
+          classpath="${java.classpath}">
+	<arg value="${dn.language}"/>
+	<arg value="cmdline"/>
+	<arg value="${dn.translation.policy}"/>
+	<arg value="${dn.debug}"/>
+	<arg value="${dn.lib.translationfiles.path}"/>
+      <arg value="${dn.lib.classes.classpath}"/>
+      <arg value="${java.project.dir}"/>
+      <arg value="${dn.mainClass}"/>
+	<arg value="${dn.project}"/>
+    </java>
+ </target>
+	
+  <target name="closedocs" depends="init">
+	<javadoc packagenames="com.sun.dn.*"
+		
+ 
+		sourcepath="src" 
+		destdir="docs/api"/> 
+
+	<zip destfile="docs.zip" 
+		basedir="docs/"
+ 	/>
+  </target>
+
+  <target name="opendocs" depends="init">
+	<unzip src="docs.zip" dest="docs"/>
+  </target>
+
+<target name="librarydist" depends="init">
+	
+	<zip destfile="build/librarydist.zip" 
+		basedir="."
+		includes="src/com/sun/dn/library/**"
+ 	/>
+  </target>
+
+
+
+   <target name="clean" depends="init, cleanapp,cleantests">
+    <delete dir="build" quiet="true" />
+    <delete dir="docs/api" quiet="true" />
+    <delete dir="${dn.testout.dir}" quiet="true"/>
+  </target>
+
+  <target name="cleanapp" depends="init">
+	<delete dir="${java.project.dir}" quiet="true" />
+	<delete file="jvbout.txt" quiet="true" />
+
+  </target>
+
+<target name="cleantests" depends="init">
+	<delete dir="${dn.testout.dir}" quiet="true" />
+  </target>
+
+  
+
+</project>

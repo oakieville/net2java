@@ -1,0 +1,29 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Net.WebClient</net-classname>
+<inherits>System.ComponentModel.Component</inherits>
+<java>com.sun.dn.library.System.Net.WebClientSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Function OpenRead(ByVal address As String) As Stream</vb-signature>
+<java>${this}.openRead(${arg0})</java>
+<import>com.sun.dn.library.System.Net.WebClientSupport</import>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new WebClientSupport()</java>
+<import>com.sun.dn.library.System.Net.WebClientSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function OpenWrite(ByVal address As String, ByVal method As String) As Stream</vb-signature>
+<java>${this}.openWrite(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.Net.WebClientSupport</import>
+</method>
+</methods>
+</translation>
+

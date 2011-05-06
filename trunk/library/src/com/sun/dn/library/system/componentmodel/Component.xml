@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.ComponentModel.Component</net-classname>
+<inherits>System.MarshalByRefObject</inherits>
+<java>com.sun.dn.library.System.ComponentModel.ComponentSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Protected Overridable Sub Dispose(ByVal disposing As Boolean)</vb-signature>
+<java>// ComponentSupport.disposeComponent(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.ComponentModel.ComponentSupport</import>
+</method>
+</methods>
+</translation>

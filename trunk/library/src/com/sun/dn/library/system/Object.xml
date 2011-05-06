@@ -1,0 +1,24 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Object</net-classname>
+<java>Object</java>
+</class>
+<methods>
+<method>
+<vb-signature>Overloads Public Overridable Function Equals(ByVal obj As Object) As Boolean</vb-signature>
+<java>${this}.equals(${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Overridable Function ToString() As String</vb-signature>
+<java>"" + ${this}</java>
+</method>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new Object()</java>
+</method>
+</methods>
+</translation>

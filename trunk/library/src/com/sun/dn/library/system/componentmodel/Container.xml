@@ -1,0 +1,22 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.ComponentModel.Container</net-classname>
+<java>com.sun.dn.library.System.ComponentModel.ContainerSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new ContainerSupport()</java>
+<import>com.sun.dn.library.System.ComponentModel.ContainerSupport</import>
+</method>
+<method>
+<vb-signature>Sub Dispose()</vb-signature>
+<java>dispose()</java>
+</method>
+</methods>
+</translation>
+

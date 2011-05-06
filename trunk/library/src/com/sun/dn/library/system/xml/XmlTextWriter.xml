@@ -1,0 +1,61 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Xml.XmlTextWriter</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Xml.XmlTextWriterSupport</java>
+</class>
+<properties>
+<property>
+<name>Formatting</name>
+<net-type>Formatting</net-type>
+<get>
+<java>${this}.getFormatting()</java>
+</get>
+<set>
+<java>${this}.setFormatting(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New( ByVal filename As String, ByVal encoding As Encoding)</vb-signature>
+<java>new XmlTextWriterSupport(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Sub WriteElementString( ByVal localName As String, ByVal ns As String )</vb-signature>
+<java>${this}.writeElementString(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+<method>
+<vb-signature>Public MustOverride Sub WriteEndElement()</vb-signature>
+<java>${this}.writeEndElement()</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public MustOverride Sub WriteEndDocument()</vb-signature>
+<java>${this}.writeEndDocument()</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+<method>
+<vb-signature>Public MustOverride Sub Close()</vb-signature>
+<java>${this}.close()</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Sub WriteStartElement( ByVal localName As String )</vb-signature>
+<java>${this}.writeStartElement(${arg0})</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public MustOverride Sub WriteStartDocument()</vb-signature>
+<java>${this}.writeStartDocument()</java>
+<import>com.sun.dn.library.System.Xml.XmlTextWriterSupport</import>
+</method>
+</methods>
+</translation>
+

@@ -1,0 +1,7 @@
+<translation>
+<event-defn>
+<net-classname>System.Windows.Forms.Load</net-classname>
+<net-type>System.EventArgs</net-type>
+</event-defn>
+</translation>
+

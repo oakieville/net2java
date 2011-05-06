@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>GettingStartedWorkspace</title>
+</head>
+<body>
+<h2>Welcome to the .NET2Java Workspace </h2>
+<h6>Danny Coward January 2007</h6>
+<span style="font-weight: bold;">As soon as you check all the files you
+need to do these THREE things. </span><br>
+<br>
+<span style="font-style: italic;">cd to the root of the workspace you
+checked out</span><br>
+<br>
+<span style="font-weight: bold;">1) Build the Library</span><br>
+<br>
+<span style="font-style: italic;">cd library</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant build</span><br>
+<br>
+<span style="font-weight: bold;">2) Build the parser</span><br>
+<br>
+<span style="font-style: italic;">cd dnj</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant build</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant openprojects</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant vbtests</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant cstests</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant demos</span><br
+ style="font-style: italic;">
+(all the tests and demos should work otherwise something has gone wrong)<br>
+<br>
+<span style="font-weight: bold;">3) Build the NetBeans Plugin</span><br>
+<br style="font-style: italic;">
+<span style="font-style: italic;">cd dnj</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant plugin&nbsp; </span>(copies the
+parser source into the plugin project...)<br style="font-style: italic;">
+<span style="font-style: italic;">start NetBeans 5.5</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">Open dnj/plugin/DNPlugin</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">Build the plugin from the NetBeans
+Menu</span><br>
+<h3><span style="font-weight: bold;">Other things to know</span></h3>
+<span style="font-weight: bold;">If you add a test, remember to do</span><br>
+<br>
+<span style="font-style: italic;">cd dnj</span><br
+ style="font-style: italic;">
+<span style="font-style: italic;">ant closeprojects</span><br>
+<br>
+<span style="font-weight: bold;">in order to update the projects
+archive.</span><br>
+<br>
+<span style="font-weight: bold;">To use Net2Java on the command line...</span><br>
+<br>
+<span style="font-style: italic;">cd dnj</span><br>
+<br>
+<span style="font-style: italic;">ant cmd &nbsp;&nbsp; </span>&nbsp;for
+command line apps<br style="font-style: italic;">
+<span style="font-style: italic;">ant gui &nbsp;&nbsp; </span>&nbsp;for
+web apps<br style="font-style: italic;">
+<span style="font-style: italic;">ant web &nbsp;&nbsp; </span>&nbsp;for
+web apps<br>
+<br>
+<span style="font-weight: bold;">The parser picks up the project
+details to translate from the dnj/project.properties file. Its pretty
+self evident.</span><br style="font-weight: bold;">
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">And finally...</span><br
+ style="font-weight: bold;">
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">Take a tour of build.properties to see
+where the command line version picks up the library and other settings.
+And check out build.xml, there may be some other targets of interest in
+there.</span><br style="font-weight: bold;">
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">Have fun !</span><br>
+<br>
+</body>
+</html>

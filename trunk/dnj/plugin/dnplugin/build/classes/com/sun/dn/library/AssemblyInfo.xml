@@ -1,0 +1,67 @@
+
+ <?xml version="1.0"?>
+<translation>
+	<class>
+		<net-classname> AssemblyInfo </net-classname>
+		<inherits> System.Object </inherits>
+		<java> com.sun.dn.library.AssemblyInfoSupport </java>
+	</class>
+
+	<methods>
+		<method>
+			<vb-signature>Public Sub New()</vb-signature>
+			<java>new AssemblyInfoSupport()</java>
+			<import> com.sun.dn.library.AssemblyInfoSupport </import>
+		</method>
+
+	</methods>
+
+	<properties>
+		<property>
+			<name> Version </name>
+			<net-type> System.String </net-type>
+			<get>
+				<java> ${this}.getValueFor("AssemblyVersion") </java>
+			</get>
+		</property>
+	
+		<property>
+			<name> Title </name>
+			<net-type> System.String </net-type>
+			<get>
+				<java> ${this}.getValueFor("AssemblyTitle") </java>
+			</get>
+		</property>
+		<property>
+			<name> Description </name>
+			<net-type> System.String </net-type>
+			<get>
+				<java> ${this}.getValueFor("AssemblyDescription") </java>
+			</get>
+		</property>
+		<property>
+			<name> Product </name>
+			<net-type> System.String </net-type>
+			<get>
+				<java> ${this}.getValueFor("AssemblyProduct") </java>
+			</get>
+		</property>
+		<property>
+			<name> Copyright </name>
+			<net-type> System.String </net-type>
+			<get>
+				<java> ${this}.getValueFor("AssemblyCopyright") </java>
+			</get>
+		</property>
+		<property>
+			<name> CodeBase </name>
+			<net-type> System.String </net-type>
+			<get>
+				<java> ${this}.getValueFor("AssemblyCodeBase") </java>
+			</get>
+		</property>
+		
+	</properties>
+	
+</translation>
+ 

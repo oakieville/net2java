@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Boolean</net-classname>
+<inherits>System.Object</inherits>
+<java>boolean</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Shared Function Parse( ByVal value As String ) As Boolean</vb-signature>
+<java>Boolean.valueOf(${arg0}).booleanValue()</java>
+</method>
+</methods>
+</translation>
+

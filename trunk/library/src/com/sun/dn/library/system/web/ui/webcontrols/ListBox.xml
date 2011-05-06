@@ -1,0 +1,37 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Web.UI.WebControls.ListBox</net-classname>
+<inherits>System.Web.UI.WebControls.ListControl</inherits>
+<java>javax.faces.component.html.HtmlSelectOneListbox</java>
+</class>
+<properties>
+<property>
+<name>Items</name>
+<net-type>ListItemCollection</net-type>
+<get>
+<java>${this}.getChildren()</java>
+</get>
+</property>
+<property>
+<name>SelectedValue</name>
+<net-type>String</net-type>
+<get>
+<java>ListBoxSupport.getSelectedValue(${this})</java>
+<import>com.sun.dn.library.System.Web.UI.WebControls.ListBoxSupport</import>
+</get>
+</property>
+<property>
+<name>SelectedIndex</name>
+<net-type>Integer</net-type>
+<set>
+<java>ListBoxSupport.setSelectedIndex(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Web.UI.WebControls.ListBoxSupport</import>
+</set>
+</property>
+</properties>
+</translation>
+

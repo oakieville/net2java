@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.OpenFileDialog</net-classname>
+<inherits>System.Windows.Forms.FileDialog</inherits>
+<java>javax.swing.JFileChooser</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>FileDialogSupport.getOpenDialog()</java>
+</method>
+</methods>
+</translation>
+

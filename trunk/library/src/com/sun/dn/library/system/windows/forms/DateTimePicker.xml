@@ -1,0 +1,40 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.DateTimePicker</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.DateTimePickerSupport</java>
+</class>
+<events>
+<event>
+<name>ValueChanged</name>
+<net-classname>System.Windows.Forms.ValueChanged</net-classname>
+<add-listener>addActionListener</add-listener>
+<listener-method>actionPerformed</listener-method>
+<java-listener-ifc>java.awt.event.ActionListener</java-listener-ifc>
+</event>
+</events>
+<properties>
+<property>
+<name>Value</name>
+<net-type>Date</net-type>
+<get>
+<java>${this}.getValue()</java>
+</get>
+<set>
+<java>${this}.setValue(${value})</java>
+</set>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new DateTimePickerSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.DateTimePickerSupport</import>
+</method>
+</methods>
+</translation>
+

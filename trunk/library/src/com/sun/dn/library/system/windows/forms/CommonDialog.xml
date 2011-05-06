@@ -1,0 +1,22 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.CommonDialog</net-classname>
+<inherits>System.ComponentModel.Component</inherits>
+<java>javax.swing.JDialog</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Function ShowDialog(ByVal owner As System.Windows.Forms.IWin32Window) As System.Windows.Forms.DialogResult</vb-signature>
+<java>${this}.showDialog(${arg0}, "")</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function ShowDialog() As DialogResult</vb-signature>
+<java>${this}.showDialog(null, "")</java>
+</method>
+</methods>
+</translation>
+

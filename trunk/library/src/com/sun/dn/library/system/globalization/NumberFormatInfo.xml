@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Globalization.NumberFormatInfo</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>NumberDecimalSeparator</name>
+<net-type>String</net-type>
+<get>
+<java>"."</java>
+</get>
+</property>
+<property>
+<name>CurrentInfo</name>
+<net-type>System.Globalization.NumberFormatInfo</net-type>
+<get>
+<java>0</java>
+</get>
+</property>
+</properties>
+</translation>
+

@@ -1,0 +1,28 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.ContainerControl</net-classname>
+<inherits>System.Windows.Forms.ScrollableControl</inherits>
+</class>
+<properties>
+<property>
+<name>AutoScaleDimensions</name>
+<net-type>System.Drawing.SizeF</net-type>
+<set>
+<java>// ${this}.setPreferredSize(${value})</java>
+</set>
+</property>
+<property>
+<name>AutoScaleMode</name>
+<net-type>System.Windows.Forms.AutoScaleMode</net-type>
+<set>
+<java>ContainerControlSupport.setAutoScaleMode(${this}, ${value})</java>
+<import>com.sun.dn.library.System.Windows.Forms.ContainerControlSupport</import>
+</set>
+</property>
+</properties>
+</translation>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<namespaces>
+	<namespace>Support</namespace>	
+	<namespace>System</namespace>	
+	<namespace>System.Diagnostics</namespace>
+	<namespace>System.Drawing</namespace>
+	<namespace>System.IO</namespace>
+	<namespace>System.Globalization</namespace>
+	<namespace>System.Reflection</namespace>
+	<namespace>System.Resources</namespace>
+	<namespace>System.Text</namespace>
+	<namespace>System.Web</namespace>
+	<namespace>System.Web.UI</namespace>
+	<namespace>System.Web.UI.WebControls</namespace>
+	<namespace>System.Xml</namespace>
+	<namespace>Microsoft.VisualBasic</namespace>
+</namespaces>

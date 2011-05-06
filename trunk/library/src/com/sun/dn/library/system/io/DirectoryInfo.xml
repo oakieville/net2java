@@ -1,0 +1,42 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.IO.DirectoryInfo</net-classname>
+<inherits>System.IO.FileSystemInfo</inherits>
+<java>com.sun.dn.library.System.IO.DirectoryInfoSupport</java>
+</class>
+<properties>
+<property>
+<name>Parent</name>
+<net-type>System.IO.DirectoryInfo</net-type>
+<get>
+<java>${this}.getParentDirectoryInfo()</java>
+</get>
+</property>
+<property>
+<name>Root</name>
+<net-type>System.IO.DirectoryInfo</net-type>
+<get>
+<java>${this}.getRoot()</java>
+</get>
+</property>
+<property>
+<name>Name</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getName()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New( ByVal path As String  )</vb-signature>
+<java>new DirectoryInfoSupport(${arg0})</java>
+<import>com.sun.dn.library.System.IO.DirectoryInfoSupport</import>
+</method>
+</methods>
+</translation>
+

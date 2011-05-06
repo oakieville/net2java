@@ -1,0 +1,33 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>Microsoft.VisualBasic.Interaction</net-classname>
+<runtime>true</runtime>
+</class>
+<methods>
+<method>
+<vb-signature>Public Function Command() As String</vb-signature>
+<java>InteractionSupport.getCommand()</java>
+<import>com.sun.dn.library.Microsoft.VisualBasic.InteractionSupport</import>
+</method>
+<method>
+<vb-signature>Public Function MsgBox(ByVal Prompt As String) As MsgBoxResult</vb-signature>
+<java>MsgBoxSupport.showDialog(${arg0})</java>
+<import>com.sun.dn.library.Microsoft.VisualBasic.MsgBoxSupport</import>
+</method>
+<method>
+<vb-signature>Public Function MsgBox(ByVal Prompt As Object, ByVal Buttons As Integer) As MsgBoxResult</vb-signature>
+<java>MsgBoxSupport.showDialog(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.Microsoft.VisualBasic.MsgBoxSupport</import>
+</method>
+<method>
+<vb-signature>Public Function MsgBox(ByVal Prompt As Object, ByVal Buttons As Integer, ByVal Title As Object) As MsgBoxResult</vb-signature>
+<java>MsgBoxSupport.showDialog(${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.Microsoft.VisualBasic.MsgBoxSupport</import>
+</method>
+</methods>
+</translation>
+

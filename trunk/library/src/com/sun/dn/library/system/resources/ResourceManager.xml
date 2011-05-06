@@ -1,0 +1,29 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Resources.ResourceManager</net-classname>
+<inherits>System.Object</inherits>
+<java>com.sun.dn.library.System.Resources.ResourceManagerSupport</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal resourceSource As Type)</vb-signature>
+<java>new ResourceManagerSupport(${arg0})</java>
+<import>com.sun.dn.library.System.Resources.ResourceManagerSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Overridable Function GetObject(ByVal name As String) As Object</vb-signature>
+<java>${this}.getObject(${arg0})</java>
+<import>com.sun.dn.library.System.Resources.ResourceManagerSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Overridable Function GetString(ByVal name As String) As String</vb-signature>
+<java>${this}.getString(${arg0})</java>
+<import>com.sun.dn.library.System.Resources.ResourceManagerSupport</import>
+</method>
+</methods>
+</translation>
+

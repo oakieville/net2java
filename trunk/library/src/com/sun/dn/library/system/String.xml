@@ -1,0 +1,247 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.String</net-classname>
+<inherits>System.Object</inherits>
+<java>String</java>
+</class>
+<properties>
+<property>
+<name>Length</name>
+<net-type>Integer</net-type>
+<get>
+<java>${this}.length()</java>
+</get>
+</property>
+<property>
+<name>Empty</name>
+<net-type>System.String</net-type>
+<get>
+<java>""</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Overloads Public Function Replace(ByVal oldValue As String, ByVal newValue As String) As String</vb-signature>
+<java>StringSupport.replace(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function CompareOrdinal(  ByVal strA As String,  ByVal strB As String) As Integer</vb-signature>
+<java>StringSupport.compareOrdinal(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOf(ByVal value As String, ByVal startIndex As Integer, ByVal count As Integer) As Integer</vb-signature>
+<java>StringSupport.lastIndexOf(${this}, ${arg0}, ${arg1}, ${arg2})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function PadLeft(ByVal totalWidth As Integer, ByVal paddingChar As Char) As String</vb-signature>
+<java>StringSupport.padLeftC(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOfAny(ByVal anyOf() As Char) As Integer</vb-signature>
+<java>StringSupport.indexOfAny(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function Trim() As String</vb-signature>
+<java>StringSupport.trim(${this})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOfAny(ByVal anyOf() As Char, ByVal startIndex As Integer) As Integer</vb-signature>
+<java>StringSupport.lastIndexOfAny(${this}, ${arg0}, ${arg1})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOfAny(ByVal anyOf() As Char, ByVal startIndex As Integer, ByVal count As Integer) As Integer</vb-signature>
+<java>StringSupport.indexOfAny(${this}, ${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function PadLeft(ByVal totalWidth As Integer) As String</vb-signature>
+<java>StringSupport.padLeft(${this}, ${arg0})</java>
+</method>
+<method>
+<vb-signature>Public Function TrimStart() As String</vb-signature>
+<java>StringSupport.trimStart(${this})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Format(ByVal format As String, ByVal arg0 As Object) As String</vb-signature>
+<java>StringSupport.format(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOfAny(ByVal anyOf() As Char,ByVal startIndex As Integer) As Integer</vb-signature>
+<java>StringSupport.indexOfAny(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOfAny(ByVal anyOf() As Char, ByVal startIndex As Integer, ByVal count As Integer) As Integer</vb-signature>
+<java>StringSupport.lastIndexOfAny(${this}, ${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function Substring(ByVal startIndex As Integer, ByVal length As Integer) As String</vb-signature>
+<java>${this}.substring(${arg0}, ${arg0} + ${arg1})</java>
+</method>
+<method>
+<vb-signature>Public Function EndsWith(ByVal value As String) As Boolean</vb-signature>
+<java>${this}.endsWith(${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function ToCharArray() As Char()</vb-signature>
+<java>${this}.toCharArray()</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function Trim(ByVal ParamArray trimChars() As Char) As String</vb-signature>
+<java>StringSupport.trim(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Format(ByVal format As String, ByVal arg0 As Object, ByVal arg1 As Object) As String</vb-signature>
+<java>StringSupport.format(${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function ToLower() As String</vb-signature>
+<java>${this}.toLowerCase()</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOf(ByVal value As String, ByVal startIndex As Integer) As Integer</vb-signature>
+<java>StringSupport.indexOf(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOf(ByVal value As String) As Integer</vb-signature>
+<java>StringSupport.lastIndexOf(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function Insert(ByVal startIndex As Integer, ByVal value As String) As String</vb-signature>
+<java>StringSupport.insert(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Compare(ByVal strA As String, ByVal strB As String, ByVal ignoreCase As Boolean) As Integer</vb-signature>
+<java>StringSupport.compare(${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function Remove(ByVal startIndex As Integer, ByVal count As Integer) As String</vb-signature>
+<java>StringSupport.remove(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function StartsWith(ByVal value As String) As Boolean</vb-signature>
+<java>StringSupport.startsWith(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function TrimEnd() As String</vb-signature>
+<java>StringSupport.trimEnd(${this})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOf(ByVal value As String, ByVal startIndex As Integer) As Integer</vb-signature>
+<java>StringSupport.indexOf(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOf(ByVal value As String, ByVal startIndex As Integer) As Integer</vb-signature>
+<java>StringSupport.lastIndexOf(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function PadRight(ByVal totalWidth As Integer) As String</vb-signature>
+<java>StringSupport.padRight(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Join(ByVal separator As String, ByVal value() As String) As String</vb-signature>
+<java>StringSupport.join(${arg0}, ${arg1})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOf(ByVal value As String, ByVal startIndex As Integer, ByVal count As Integer) As Integer</vb-signature>
+<java>StringSupport.indexOf(${this}, ${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function Split(ByVal separator() As Char, ByVal count As Integer) As String()</vb-signature>
+<java>StringSupport.split(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function TrimEnd(ByVal ParamArray trimChars() As Char) As String</vb-signature>
+<java>StringSupport.trimEnd(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function EndsWith(ByVal value As String) As Boolean</vb-signature>
+<java>StringSupport.endsWith(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Format(ByVal format As String, ByVal arg0 As Object, ByVal arg1 As Object, ByVal arg2 As Object) As String</vb-signature>
+<java>StringSupport.format(${arg0}, ${arg1}, ${arg2}, ${arg3})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOf(ByVal value As String) As Integer</vb-signature>
+<java>StringSupport.indexOf(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function Substring(ByVal startIndex As Integer) As String</vb-signature>
+<java>${this}.substring(${arg0})</java>
+</method>
+<method>
+<vb-signature>Overloads Public Function ToUpper() As String</vb-signature>
+<java>StringSupport.toUpper(${this})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Concat(ByVal str0 As String, ByVal str1 As String, ByVal str2 As String) As String</vb-signature>
+<java>StringSupport.concat(${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function PadRight(ByVal totalWidth As Integer, ByVal paddingChar As Char) As String</vb-signature>
+<java>StringSupport.padRightC(${this}, ${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function IndexOf(ByVal value As String, ByVal startIndex As Integer, ByVal count As Integer) As Integer</vb-signature>
+<java>StringSupport.indexOf(${this}, ${arg0}, ${arg1}, ${arg2})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function LastIndexOfAny(ByVal anyOf() As Char) As Integer</vb-signature>
+<java>StringSupport.lastIndexOfAny(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Function Split(ByVal separator() As Char) As String()</vb-signature>
+<java>StringSupport.split(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Shared Function Compare(ByVal strA As String, ByVal strB As String) As Integer</vb-signature>
+<java>StringSupport.compare(${arg0}, ${arg1})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+<method>
+<vb-signature>Public Function TrimStart(ByVal ParamArray trimChars() As Char) As String</vb-signature>
+<java>StringSupport.trimStart(${this}, ${arg0})</java>
+<import>com.sun.dn.library.System.StringSupport</import>
+</method>
+</methods>
+</translation>
+

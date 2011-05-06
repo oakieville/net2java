@@ -1,0 +1,18 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Drawing.Point</net-classname>
+<java>java.awt.Point</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub New(ByVal x As Integer, ByVal y As Integer)</vb-signature>
+<java>new Point(${arg0}, ${arg1})</java>
+<import>java.awt.Point</import>
+</method>
+</methods>
+</translation>
+

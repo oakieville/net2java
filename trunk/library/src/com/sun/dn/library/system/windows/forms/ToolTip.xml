@@ -1,0 +1,23 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.ToolTip</net-classname>
+<inherits>System.ComponentModel.Component</inherits>
+<java>javax.swing.JToolTip</java>
+</class>
+<methods>
+<method>
+<vb-signature>Public Sub SetToolTip(ByVal control As Control, ByVal caption As String)</vb-signature>
+<java>${arg0}.setToolTipText(${arg1})</java>
+</method>
+<method>
+<vb-signature>Public Sub New(ByVal cont As IContainer)</vb-signature>
+<java>new JToolTip()</java>
+<import>javax.swing.JToolTip</import>
+</method>
+</methods>
+</translation>
+

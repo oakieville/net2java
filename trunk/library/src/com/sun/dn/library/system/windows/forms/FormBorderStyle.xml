@@ -1,0 +1,27 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.FormBorderStyle</net-classname>
+<inherits>System.Object</inherits>
+</class>
+<properties>
+<property>
+<name>FixedDialog</name>
+<net-type>Integer</net-type>
+<get>
+<java>// Java for FormBorderStyle @FormBorderStyle.xml</java>
+</get>
+</property>
+<property>
+<name>FixedSingle</name>
+<net-type>Integer</net-type>
+<get>
+<java>// Java for FormBorderStyle @FormBorderStyle.xml</java>
+</get>
+</property>
+</properties>
+</translation>
+

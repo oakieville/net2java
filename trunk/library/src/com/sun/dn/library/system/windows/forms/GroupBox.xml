@@ -1,0 +1,39 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.GroupBox</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+<java>com.sun.dn.library.System.Windows.Forms.GroupBoxSupport</java>
+</class>
+<properties>
+<property>
+<name>Text</name>
+<net-type>System.String</net-type>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+<get>
+<java>${this}.getText()</java>
+</get>
+</property>
+</properties>
+<methods>
+<method>
+<vb-signature>Public Sub New()</vb-signature>
+<java>new GroupBoxSupport()</java>
+<import>com.sun.dn.library.System.Windows.Forms.GroupBoxSupport</import>
+</method>
+<method>
+<vb-signature>Overloads Public Sub ResumeLayout(ByVal performLayout As Boolean)</vb-signature>
+<java>// Group Box Resume Layout</java>
+</method>
+<method>
+<vb-signature>Public Sub SuspendLayout()</vb-signature>
+<java>// Group Box suspend Layout</java>
+</method>
+</methods>
+</translation>
+

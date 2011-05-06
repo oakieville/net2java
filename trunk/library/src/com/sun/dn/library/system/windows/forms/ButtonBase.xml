@@ -1,0 +1,52 @@
+<!--
+Copyright 2006 Sun Microsystems, Inc. All rights reserved.
+Use is subject to license terms.
+-->
+<translation>
+<class>
+<net-classname>System.Windows.Forms.ButtonBase</net-classname>
+<inherits>System.Windows.Forms.Control</inherits>
+</class>
+<properties>
+<property>
+<name>UseVisualStyleBackColor</name>
+<net-type>Boolean</net-type>
+<get>
+<java>true</java>
+</get>
+<set>
+<java>// ${this} should use native background color: ${value}</java>
+</set>
+</property>
+<property>
+<name>FlatStyle</name>
+<net-type>System.Windows.Forms.FlatStyle</net-type>
+<get>
+<java>// ${this}.getFlatStyle()</java>
+</get>
+<set>
+<java>ButtonBaseSupport.setFlatStyle( ${this}, ${value} )</java>
+<import>com.sun.dn.library.System.Windows.Forms.ButtonBaseSupport</import>
+</set>
+</property>
+<property>
+<name>AutoSize</name>
+<net-type>Boolean</net-type>
+<set>
+<java>ButtonBaseSupport.setAutoSize( ${this}, ${value} )</java>
+<import>com.sun.dn.library.System.Windows.Forms.ButtonBaseSupport</import>
+</set>
+</property>
+<property>
+<name>Text</name>
+<net-type>String</net-type>
+<get>
+<java>${this}.getText()</java>
+</get>
+<set>
+<java>${this}.setText(${value})</java>
+</set>
+</property>
+</properties>
+</translation>
+
